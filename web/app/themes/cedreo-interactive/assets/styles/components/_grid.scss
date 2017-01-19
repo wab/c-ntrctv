@@ -1,0 +1,18 @@
+// Grid system
+
+.container {
+	.sidebar-primary & {
+		@include grid-row;
+	}
+}
+
+.main {
+  // Use the full column count (100%)
+  .sidebar-primary & {
+  	@include grid-column;
+    @include grid-column-size(8);
+  }
+}
+.sidebar {
+   @include grid-column(4);
+}

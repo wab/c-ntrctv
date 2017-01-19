@@ -1,0 +1,110 @@
+.post {
+	padding-bottom: 2em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid $medium-gray;
+	position: relative;
+}
+
+.entry-title {
+	text-transform: uppercase;	
+}
+
+.thumb {
+	
+	display: block;
+	margin-bottom: 1em;
+
+
+	img {
+		filter: grayscale(80%);
+		transition: all 0.5s ease;
+	}
+
+	&:hover, &:focus {
+		img {
+			filter: grayscale(0%);
+		}
+	}
+} 
+
+.meta {
+	
+	.excerpt & {
+		display: inline-block;
+		min-width: 30px;
+		text-align: center;
+		background: rgba(0,0,0,0.8);
+		color: $white;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		time {
+			display: block;
+			padding: 1em;
+			font-size: 1.2em;
+			line-height: 1;
+		}
+
+		.category {
+			@include button(true, map-get($foundation-palette, primary), darken(map-get($foundation-palette, primary), 10%), #fff, solid);
+			margin-bottom: 0;
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				background-image: url(../images/pictos.png);
+				background-size: 180px;
+
+				@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+						background-image: url(../images/pictos@2x.png);
+				}
+			}
+
+			//logiciels
+			&.cat-26 {
+				@include button-style(#158881, darken(#158881, 10%), #fff);
+				&:before {
+					background-position: -90px 0;
+				}
+				
+				
+			}
+			//interviews
+			&.cat-24 {
+				
+				@include button-style(#196680, darken(#196680, 10%), #fff);
+				&:before {
+					background-position: -30px 0;
+				}
+				
+			}
+			//nos clients
+			&.cat-28 {
+				@include button-style(#02a77a, darken(#02a77a, 10%), #fff);
+				&:before {
+					background-position: -120px 0;
+				}
+				
+			}
+			//cedreo
+			&.cat-30 {
+				@include button-style(#699f3c, darken(#699f3c, 10%), #fff);
+				&:before {
+					background-position: -150px 0;
+				}
+				
+			}
+			
+		}
+	}
+}
+
+.comments {
+	border-top: 0.5em solid $light-gray;
+	margin-top: 1em;
+	padding-top: 1em;
+}

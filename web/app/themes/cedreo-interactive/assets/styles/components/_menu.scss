@@ -1,0 +1,149 @@
+html, body {
+    height: 100%;
+}
+
+/* Adds a transition and the resting translate state */
+.push-wrap {
+    transition: all 500ms ease;
+    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
+
+    .show-nav & {
+        transform: translate(0, -15%);
+        transform: translate3d(0, -15%, 0);
+        overflow-y: hidden;
+        //position: fixed;
+    }
+}
+/* Will animate the content to the right 275px revealing the hidden nav */
+
+/* Positions the nav fixed below the push wrapper */
+.main-navigation {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    padding-top: $header-height;
+    top: 0;
+    left: 0;
+    background: $body-font-color;
+    transition: all 300ms ease-in;
+    opacity: 0.5;
+    font-family: $header-font-family;
+
+    overflow-y: auto;
+
+    visibility: hidden;
+
+
+    .menu-row {
+        display: flex;
+        //align-items: center;
+        flex-flow: row wrap;
+        padding: map-get($grid-column-gutter, small);
+    }
+
+    .menu-section {
+        //margin: 3em;
+        //@include flex-grid-column();
+
+        padding: map-get($grid-column-gutter, small);
+        flex: 1;
+        flex-basis: 250px;
+
+        @include breakpoint(medium) {
+            flex-basis: 50%;
+        }
+        
+        @include breakpoint(large) {
+            flex-basis: 25%;
+        }
+
+
+        ul:not(.reseaux) {
+
+            li a {
+                padding-left: 0;
+                transition: all 0.2s ease;
+
+                &:hover, &:focus {
+                    color: map-get($foundation-palette, primary);
+                }
+
+            }
+
+            .active a {
+                padding-left: 0.5em;
+
+                &:hover, &:focus {
+                    color: $body-background;
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    .subheader {
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+        border-bottom: solid 1px map-get($foundation-palette, secondary);
+        color: map-get($foundation-palette, secondary);
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
+
+    hr {
+        border-color: rgba(255,255,255,0.1);
+    }
+
+    .panel {
+        padding: 1rem;
+        border: 1px solid rgba(255,255,255,0.2);
+        background: rgba(0,0,0,0.3);
+        border-radius: $global-radius;
+        
+        > * {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .show-nav & {
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    a {
+        color: $body-background;
+
+        &:hover, &:focus {
+            color: map-get($foundation-palette, primary);
+        }
+    }
+}
+
+.reseaux {
+    margin: 0;
+    text-align: right;
+    li {
+        display: inline-block;
+    }
+    a {
+        display: inline-block;
+        width: 29px;
+        line-height: 25px;
+        text-align: center;
+        border-radius: 50%;
+        border: solid 2px map-get($foundation-palette, primary);
+        color: map-get($foundation-palette, primary);
+        transition: all 0.2s ease;
+
+        &:hover, &:focus {
+            color: lighten(map-get($foundation-palette, primary), 15%);
+            border-color: lighten(map-get($foundation-palette, primary), 35%);
+        }
+    }
+}

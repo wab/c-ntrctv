@@ -1,0 +1,218 @@
+body{
+	//overflow: hidden;
+}
+.section {
+	padding: 3rem 0;
+	.row {
+		position: relative;
+	}
+}
+
+.cedreo-title {
+	text-align: center;
+	text-transform: uppercase;
+
+	.contenu & {
+		text-align: left;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		width: 200px;
+		margin: 0.5em auto 2em auto;
+		height: 1px;
+		background: $body-font-color;
+
+		.contenu & {
+			margin-left: 0;
+		}
+
+		.arguments & {
+			background: $body-background;
+		}
+	}
+
+}
+
+.breadcrumbs {
+
+	text-align: center;
+	position: relative;
+	z-index: 100;
+
+	ul {
+		@include breadcrumbs-container;
+		margin-bottom: 0;
+		display: inline-block;
+
+		a {
+			color: $body-font-color;
+
+			.banshadow & {
+				color: $body-background;
+			}
+
+		}
+
+		.current {
+			color: map-get($foundation-palette, primary);
+		}
+	}
+}
+
+h1, h2, .h1, .h2, blockquote, .lead {
+	span {
+		color: map-get($foundation-palette, primary);
+		font-weight: 700;
+	}
+}
+
+.img-rounded {
+	display: block;
+	border-radius: 50%;
+	border: solid 0.4em transparent;
+	background-color: map-get($foundation-palette, primary);
+}
+address {
+	font-style: normal;
+	text-transform: uppercase;
+}
+blockquote {
+
+	.contenu & {
+		font-style: italic;
+		@extend .clearfix;
+	}
+	
+
+	.temoignages & {
+
+		border: none;
+		position: relative;
+		background: rgba(0,0,0,0.4);
+
+		margin: map-get($grid-column-gutter, small);
+		padding: map-get($grid-column-gutter, small);
+
+		@include breakpoint(medium) {
+			margin: map-get($grid-column-gutter, medium);
+			padding: map-get($grid-column-gutter, medium);
+		}
+
+		cite {
+			color: map-get($foundation-palette, primary);
+		}
+
+		&:before {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			width: 32px;
+			height: 28px;
+			top: -12px;
+			left: -20px;
+			background: url(../images/quote.png) center no-repeat;
+		}
+
+	}
+}
+
+.lead {
+	font-family: $header-font-family;
+	text-transform: uppercase;
+	span, i {
+		color: map-get($foundation-palette, primary);
+	}
+}
+
+.page-header {
+	min-height: 25vh;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: $dark-gray;
+	background-image: url(../images/banners/cedreo.jpg);
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom:0;
+		background: rgba(0,0,0,0.6);
+	}
+
+
+	.page-template-page-secteur & {
+		background-image: url(../images/banners/secteurs.jpg);
+	}
+
+	.single-logiciel & {
+		background-image: url(../images/banners/logiciels.jpg);
+	}
+
+	.sidebar-primary & {
+		background-image: url(../images/banners/blog.jpg);
+	}
+
+	.page-title {
+		text-align: center;
+		color: $white;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		position: relative;
+		z-index: 100;
+
+		font-size: rem-calc(map-get(map-get($header-sizes, medium), h1)); 
+
+		&:after {
+			background: none;
+			margin: 0;
+		}
+	}
+}
+
+.banshadow {
+	@include breakpoint(large) {
+
+		&:after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 25px;
+			background: url(../images/shadow-carousel.png) top center no-repeat;
+			background-size: 70%;
+		}
+
+	}
+}
+
+.stories {
+	.item {
+		text-transform: uppercase;
+	}
+}
+
+.cookies-message {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0.8em;
+	background: rgba(0,0,0,0.8);
+	color: $white;
+	z-index: 800;
+	font-size: 0.8rem;
+
+	.button {
+		margin-bottom: 0;
+	}
+}
