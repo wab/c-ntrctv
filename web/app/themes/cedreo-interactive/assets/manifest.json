@@ -30,6 +30,6 @@
     }
   },
   "config": {
-    "devUrl": "http://cedreo-interactive.dev"
+    "devUrl": "http://cedreo-interactive.com.dev"
   }
 }
