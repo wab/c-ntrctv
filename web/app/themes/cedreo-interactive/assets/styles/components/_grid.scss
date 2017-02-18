@@ -10,9 +10,14 @@
   // Use the full column count (100%)
   .sidebar-primary & {
   	@include grid-column;
-    @include grid-column-size(8);
+    @include breakpoint(medium) {
+      @include grid-column-size(8);
+    }
   }
 }
 .sidebar {
-   @include grid-column(4);
+  @include grid-column;
+  @include breakpoint(medium) {
+    @include grid-column-size(4);
+  }
 }
