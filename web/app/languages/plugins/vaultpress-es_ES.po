@@ -1,0 +1,191 @@
+# Translation of Plugins - VaultPress - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - VaultPress - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-12-06 07:48:17+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - VaultPress - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://vaultpress.com/?utm_source=author-uri&amp;utm_medium=plugin-description&amp;utm_campaign=1.0"
+msgstr "http://vaultpress.com/?utm_source=author-uri&amp;utm_medium=plugin-description&amp;utm_campaign=1.0"
+
+#. Author of the plugin/theme
+msgid "Automattic"
+msgstr "Automattic"
+
+#. Plugin URI of the plugin/theme
+msgid "http://vaultpress.com/?utm_source=plugin-uri&amp;utm_medium=plugin-description&amp;utm_campaign=1.0"
+msgstr "http://vaultpress.com/?utm_source=plugin-uri&amp;utm_medium=plugin-description&amp;utm_campaign=1.0"
+
+#. Plugin Name of the plugin/theme
+msgid "VaultPress"
+msgstr "VaultPress"
+
+#: vaultpress.php:1269
+msgid "Invalid token. Please try to log in again."
+msgstr "Token no valido. Inténtalo de nuevo."
+
+#: vaultpress.php:1150
+msgid "The VaultPress servers cannot connect to your site. Please check that your site is visible over the Internet and there are no firewall or load balancer settings on your server that might be blocking the communication. If you&rsquo;re still having issues please <a href=\"%1$s\">contact the VaultPress&nbsp;Safekeepers</a>."
+msgstr "Los servidores de VaultPress no pueden conectarse a tu sitio. Comprueba que tu sitio es visible a través de Internet y no existe una configuración de firewall o un balanceador de carga en tu servidor que pueda estar bloqueando la comunicación. Si sigues teniendo problemas, <a href=\"%1$s\"> ponte en contacto con los Safekeepers de VaultPress</a>."
+
+#: vaultpress.php:1117
+msgid "Cannot connect to the VaultPress servers. Please check that your host allows connecting to external sites and try again. If you&rsquo;re still having issues please <a href=\"%1$s\">contact the VaultPress&nbsp;Safekeepers</a>."
+msgstr "No se puede conectar con los servidores de VaultPress. Comprueba que tu host permite conectarse a sitios externos y vuelve a intentarlo. Si sigues teniendo problemas, <a href=\"%1$s\"> ponte en contacto con los Safekeepers de VaultPress</a>."
+
+#: vaultpress.php:579
+msgid "Yay! Things look good."
+msgstr "¡Hurra! Las cosas se ven bien."
+
+#: vaultpress.php:575
+msgid "Oops... there seems to be a problem."
+msgstr "Vaya ... parece que hay un problema."
+
+#: vaultpress.php:566
+msgid "Please make sure that your website is accessible via the Internet. If you&rsquo;re still having issues please <a href=\"%1$s\">contact the VaultPress&nbsp;Safekeepers</a>."
+msgstr "Asegúrate que tu sitio web es accesible a través de Internet. Si sigues teniendo problemas, <a href=\"%1$s\"> ponte en contacto con los Safekeepers de VaultPress</a>."
+
+#: vaultpress.php:565
+msgid "Yikes! We&rsquo;ve run into a serious issue and can&rsquo;t connect to %1$s."
+msgstr "¡Vaya! Ha habido un problema grave y no podemos conectar con %1$s."
+
+#: vaultpress.php:537
+msgid "Register "
+msgstr "Regístrate"
+
+#: vaultpress.php:536
+msgid "Enter your key here..."
+msgstr "Introduce tu clave aquí ..."
+
+#: vaultpress.php:533
+msgid "Paste your registration key&nbsp;below:"
+msgstr "Pega tu clave de registro a continuación:"
+
+#: vaultpress.php:532
+msgid "Already have a VaultPress&nbsp;account?"
+msgstr "¿Ya tienes una cuenta de VaultPress?"
+
+#: vaultpress.php:522
+msgid "Start free trial"
+msgstr "Comienza una prueba gratuita."
+
+#: vaultpress.php:519
+msgid "Start a <strong>free</strong> five-day trial of VaultPress Lite. Registering will create a VaultPress account for %s."
+msgstr "Inicia una prueba <strong>gratuita</strong> de cinco días de VaultPress Lite. El registro creará una cuenta de VaultPress para %s."
+
+#: vaultpress.php:518
+msgid "Instantly connect through Jetpack"
+msgstr "Conéctate al instante a través de Jetpack."
+
+#: vaultpress.php:513
+msgid "View plans and pricing&nbsp;&raquo;"
+msgstr "Ver planes y precios &nbsp; &raquo;"
+
+#: vaultpress.php:512
+msgid "Get realtime backups, automated security scanning, and support from WordPress&nbsp;experts."
+msgstr "Obtén copias de seguridad en tiempo real, análisis automatizados de seguridad y asistencia de expertos de WordPress."
+
+#: vaultpress.php:511
+msgid "The VaultPress plugin <strong>requires a subscription</strong>."
+msgstr "El plugin VaultPress <strong>requiere suscripción</strong>."
+
+#: vaultpress.php:504
+msgid "Visit Dashboard"
+msgstr "Visita el panel de control."
+
+#: vaultpress.php:476
+msgid "There was a problem trying to register your subscription. Please try again. If you&rsquo;re still having issues please <a href=\"%1$s\">contact the VaultPress&nbsp;Safekeepers</a>."
+msgstr "Se ha producido un error al registrar tu suscripción. Vuelve a intentarlo. Si sigues teniendo problemas, <a href=\"%1$s\"> ponte en contacto con los Safekeepers de VaultPress</a>."
+
+#: vaultpress.php:452
+msgid "<strong>That's not a valid registration key.</strong> Head over to the <a href=\"%1$s\" title=\"Sign in to your VaultPress Dashboard\">VaultPress&nbsp;Dashboard</a> to find your key."
+msgstr "<strong> La clave de registro que has introducido no es válida.</strong>. Accede a tu<a href=\"%1$s\" title=\"Accede a tu Panel de control de VaultPress\"> Panel de control de VaultPress</a> para encontrar tu clave."
+
+#: vaultpress.php:437
+msgid "<strong>Failed to register VaultPress via Jetpack</strong>: %s. If you&rsquo;re still having issues please <a href=\"%1$s\">contact the VaultPress&nbsp;Safekeepers</a>."
+msgstr "<strong>Error al registrar VaultPress a través de Jetpack</strong>:%s. Si sigues teniendo problemas, <a href=\"%1$s\"> ponte en contacto con los Safekeepers de VaultPress</a>."
+
+#: vaultpress.php:373
+msgid "Visit&nbsp;the&nbsp;VaultPress&nbsp;page"
+msgstr "Visita la página de VaultPress"
+
+#: vaultpress.php:361
+msgid "VaultPress has been activated!"
+msgstr "Has activado VaultPress!"
+
+#: vaultpress.php:358
+msgid "VaultPress has been registered and is currently backing up your site. <a href=\"%1$s\">View Backup Status</a>"
+msgstr "VaultPress se ha registrado y actualmente está realizando una copia de seguridad de tu sitio. <a href=\"%1$s\">Ver estado de copia de seguridad</a>"
+
+#: vaultpress.php:352
+msgid "VaultPress has been activated across your network!"
+msgstr "¡VaultPress se ha activado en toda la red!"
+
+#: vaultpress.php:349
+msgid "Each site will need to be registered with VaultPress separately. You can purchase new keys from your <a href=\"%1$s\">VaultPress&nbsp;Dashboard</a>."
+msgstr "Debes registrar cada sitio con VaultPress por separado. Puedes comprar nuevas claves en tu <a href=\"%1$s\">Consola de administración de VaultPress </a>."
+
+#: vaultpress.php:342 vaultpress.php:583
+msgid "VaultPress needs your attention!"
+msgstr "¡VaultPress necesita tu atención!"
+
+#: vaultpress.php:339
+msgid "You must enter your registration key before VaultPress can back up and secure your site. <a href=\"%1$s\">Register&nbsp;VaultPress</a>"
+msgstr "Debe introducir tu clave de registro antes de que VaultPress pueda realizar el back up y proteger tu sitio. <a href=\"%1$s\"> Registrar VaultPress </a>"
+
+#: vaultpress.php:298
+msgid "Visit VaultPress Security"
+msgstr "Visita VaultPress Security"
+
+#: vaultpress.php:294
+msgid "%s Security Threat"
+msgid_plural "%s Security Threats"
+msgstr[0] "%s amenaza de seguridad"
+msgstr[1] "%s amenazas de seguridad"
+
+#: vaultpress.php:83
+msgid "There was a problem trying to register your VaultPress subscription."
+msgstr "Se ha producido un problema al registrar tu suscripción a VaultPress."
+
+#: cron-tasks.php:69
+msgid "Once every five minutes"
+msgstr "Una vez cada cinco minutos."
+
+#: class.vaultpress-hotfixes.php:681
+msgid "The email address entered did not appear to be a valid email address. Please enter a valid email address."
+msgstr "La dirección de correo electrónico que nos has facilitado no parece ser una dirección de correo electrónico válida. Por favor, introduce una dirección de correo electrónico válida."
+
+#: class.vaultpress-hotfixes.php:535
+msgid "You are not allowed to moderate comments on this site."
+msgstr "No puedes moderar comentarios en este sitio."
+
+#: class.vaultpress-hotfixes.php:525
+msgid "You are not allowed access to details about this site."
+msgstr "No se le permite el acceso a los detalles sobre este sitio."
+
+#: class.vaultpress-hotfixes.php:519
+msgid "Sorry, you do not have the right to delete this post."
+msgstr "Lo siento, no tienes derechos suficientes para eliminar esta entrada."
+
+#: class.vaultpress-hotfixes.php:513
+msgid "Sorry, you cannot edit this post."
+msgstr "Lo sentimos, no puedes editar esta entrada."
+
+#: class.vaultpress-hotfixes.php:479 class.vaultpress-hotfixes.php:503
+msgid "Invalid post type."
+msgstr "Tipo de publicación no válido."
+
+#: class.vaultpress-hotfixes.php:477 class.vaultpress-hotfixes.php:486
+#: class.vaultpress-hotfixes.php:496 class.vaultpress-hotfixes.php:501
+msgid "Sorry, you are not allowed to publish posts on this site."
+msgstr "Lo sentimos, no tienes permisos para publicar entradas en este sitio."
+
+#: class.vaultpress-hotfixes.php:471 class.vaultpress-hotfixes.php:499
+msgid "Sorry, you are not allowed to publish pages on this site."
+msgstr "Lo sentimos, no está permitido publicar páginas en este sitio."

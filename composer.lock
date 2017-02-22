@@ -550,15 +550,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.0.27",
+            "version": "3.0.29",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.0.27"
+                "reference": "tags/3.0.29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.0.27.zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.0.29.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -570,15 +570,15 @@
         },
         {
             "name": "wpackagist-plugin/polylang",
-            "version": "2.1",
+            "version": "2.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/polylang/",
-                "reference": "tags/2.1"
+                "reference": "tags/2.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/polylang.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang.2.1.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -630,15 +630,15 @@
         },
         {
             "name": "wpackagist-plugin/types",
-            "version": "2.2.8",
+            "version": "2.2.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/types/",
-                "reference": "tags/2.2.8"
+                "reference": "tags/2.2.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/types.2.2.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/types.2.2.9.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -690,15 +690,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "4.2.1",
+            "version": "4.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/4.2.1"
+                "reference": "tags/4.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.3.zip",
                 "reference": null,
                 "shasum": null
             },
