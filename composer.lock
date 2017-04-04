@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b44868a5b778be79ec6837c5a315731b",
-    "content-hash": "9fdd11e069af1f09fbcf136594fb99b0",
+    "hash": "16fee5fdf8f4cd362d7db77e17419d68",
+    "content-hash": "477a35d4c4425876266743f3f72407d4",
     "packages": [
         {
             "name": "composer/installers",
@@ -139,12 +139,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "eef7c0520b1e7187cd2cd7540dc997c4c3b0340a"
+                "reference": "9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/eef7c0520b1e7187cd2cd7540dc997c4c3b0340a",
-                "reference": "eef7c0520b1e7187cd2cd7540dc997c4c3b0340a",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a",
+                "reference": "9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a",
                 "shasum": ""
             },
             "require": {
@@ -529,16 +529,36 @@
             "homepage": "https://wordpress.org/plugins/convert-post-types/"
         },
         {
-            "name": "wpackagist-plugin/jetpack",
-            "version": "4.7",
+            "name": "wpackagist-plugin/custom-post-type-ui",
+            "version": "1.5.3",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/4.7"
+                "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
+                "reference": "tags/1.5.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.4.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.5.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/custom-post-type-ui/"
+        },
+        {
+            "name": "wpackagist-plugin/jetpack",
+            "version": "4.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/jetpack/",
+                "reference": "tags/4.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.4.8.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -650,15 +670,15 @@
         },
         {
             "name": "wpackagist-plugin/vaultpress",
-            "version": "1.8.6",
+            "version": "1.8.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/vaultpress/",
-                "reference": "tags/1.8.6"
+                "reference": "tags/1.8.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/vaultpress.1.8.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/vaultpress.1.8.8.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -690,15 +710,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "4.4",
+            "version": "4.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/4.4"
+                "reference": "tags/4.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.5.zip",
                 "reference": null,
                 "shasum": null
             },

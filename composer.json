@@ -163,7 +163,8 @@
     "wpackagist-plugin/convert-post-types": "^1.4",
     "wpackagist-plugin/wordpress-importer": "^0.6",
     "wpackagist-plugin/jetpack": "^4.6",
-    "wpackagist-plugin/vaultpress": "1.8.6"
+    "wpackagist-plugin/vaultpress": "~1.8",
+    "wpackagist-plugin/custom-post-type-ui": "^1.5"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
