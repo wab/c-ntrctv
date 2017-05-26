@@ -35,7 +35,7 @@
       "type": "package",
       "package": {
         "name": "toolbox-plugin/ninja-forms-uploads",
-        "version": "1.4.9",
+        "version": "3.0.6",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -148,7 +148,7 @@
     "toolbox-plugin/acf-repeater": "^1.1",
     "toolbox-plugin/acf-flexible-content": "^1.1",
     "toolbox-plugin/acf-gallery": "^1.1",
-    "toolbox-plugin/ninja-forms-uploads": "^1",
+    "toolbox-plugin/ninja-forms-uploads": "^3",
     "deliciousbrains/wp-migrate-db-pro": "*",
     "deliciousbrains/wp-migrate-db-pro-media-files": "*",
     "deliciousbrains/wp-migrate-db-pro-cli": "*",
