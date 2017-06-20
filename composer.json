@@ -35,7 +35,7 @@
       "type": "package",
       "package": {
         "name": "toolbox-plugin/ninja-forms-uploads",
-        "version": "3.0.6",
+        "version": "3.0.7",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -96,7 +96,7 @@
       "package": {
         "name": "deliciousbrains/wp-migrate-db-pro",
         "type": "wordpress-plugin",
-        "version": "1.7.1",
+        "version": "1.7.2",
         "dist": {
           "type": "zip",
           "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=1b0f680a-0bbb-4da6-bf8f-43d95035be1c&site_url=cedar-architect.com"
@@ -161,7 +161,7 @@
     "wpackagist-plugin/akismet": "^3",
     "wpackagist-plugin/convert-post-types": "^1.4",
     "wpackagist-plugin/wordpress-importer": "^0.6",
-    "wpackagist-plugin/jetpack": "^4.6",
+    "wpackagist-plugin/jetpack": "^5",
     "wpackagist-plugin/vaultpress": "~1.8",
     "wpackagist-plugin/custom-post-type-ui": "^1.5",
     "johnpbloch/wordpress": "^4.7"
