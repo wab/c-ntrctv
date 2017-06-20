@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e7bef995f6aae7f2887a84f39e15c750",
-    "content-hash": "bb766cf810e4e6dd8698ba3c157136c2",
+    "hash": "449d5a29a0f86f56c48bdce8cc83112c",
+    "content-hash": "d092a9d2c1b2acaf1989fadd225471b9",
     "packages": [
         {
             "name": "composer/installers",
@@ -93,7 +93,7 @@
         },
         {
             "name": "deliciousbrains/wp-migrate-db-pro",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=1b0f680a-0bbb-4da6-bf8f-43d95035be1c&site_url=cedar-architect.com",
@@ -446,7 +446,7 @@
         },
         {
             "name": "toolbox-plugin/ninja-forms-uploads",
-            "version": "3.0.6",
+            "version": "3.0.7",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/wab/ninja-forms-uploads/archive/master.zip",
@@ -590,15 +590,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "4.9",
+            "version": "5.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/4.9"
+                "reference": "tags/5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.4.9.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.5.0.zip",
                 "reference": null,
                 "shasum": null
             },
