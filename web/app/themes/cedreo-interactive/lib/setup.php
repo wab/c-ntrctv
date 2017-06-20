@@ -41,7 +41,7 @@ function setup() {
   register_nav_menus([
     'cedreo' => __('Company', 'cedreo')
   ]);
-  
+
   register_nav_menus([
     'footer' => __('Pied de page', 'cedreo')
   ]);
@@ -57,6 +57,7 @@ function setup() {
   add_theme_support('post-thumbnails');
   set_post_thumbnail_size( 570, 280, true );
   add_image_size( 'banner', 1200, 500, true );
+  add_image_size( 'soft', 400, 280, true );
   add_image_size( 'square', 400, 400, true );
   add_image_size( 'testimony', 125, 125, true );
   add_image_size( 'equipe', 360, 480, true );
@@ -153,7 +154,7 @@ add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 function wsds_defer_scripts( $tag, $handle, $src ) {
 
   // The handles of the enqueued scripts we want to defer
-  $defer_scripts = array( 
+  $defer_scripts = array(
     'modernizr',
     'main'
   );
@@ -161,24 +162,24 @@ function wsds_defer_scripts( $tag, $handle, $src ) {
     if ( in_array( $handle, $defer_scripts ) ) {
         return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
     }
-    
+
     return $tag;
-} 
+}
 add_filter( 'script_loader_tag', __NAMESPACE__ .'\\wsds_defer_scripts', 10, 3 );
 
 // Async load
 function wsds_async_scripts( $tag, $handle, $src ) {
 
   // The handles of the enqueued scripts we want to defer
-  $defer_scripts = array( 
-    
+  $defer_scripts = array(
+
   );
 
     if ( in_array( $handle, $defer_scripts ) ) {
         return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
     }
-    
+
     return $tag;
-} 
+}
 add_filter( 'script_loader_tag', __NAMESPACE__ .'\\wsds_async_scripts', 10, 3 );
 

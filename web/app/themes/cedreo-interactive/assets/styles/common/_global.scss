@@ -84,7 +84,7 @@ blockquote {
 		font-style: italic;
 		@extend .clearfix;
 	}
-	
+
 
 	.temoignages & {
 
@@ -170,8 +170,6 @@ blockquote {
 		letter-spacing: 0.05em;
 		position: relative;
 		z-index: 100;
-
-		font-size: rem-calc(map-get(map-get($header-sizes, medium), h1)); 
 
 		&:after {
 			background: none;

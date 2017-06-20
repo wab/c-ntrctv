@@ -33,12 +33,12 @@ if( have_rows('carousel') ): ?>
 						} else {
 							$urlink = get_sub_field('e-link');;
 						} ?>
-						
+
 						<a href="<?php echo $urlink; ?>" class="button"><?php the_sub_field('link-txt'); ?>  &rarr;</a>
 
 
 					<?php endif; ?>
-					
+
 				</div>
 
 			</div>
@@ -54,13 +54,13 @@ if( have_rows('carousel') ): ?>
 <div class="section introduction">
 	<div class="row">
 		<div class="columns medium-6">
-			
+
 			<?php if( get_field('subtitle') ) : ?>
 			<h1 class="cedreo-title"><?php the_field('subtitle'); ?></h1>
 			<?php else : ?>
 			<h1 class="cedreo-title"><?php bloginfo('description'); ?></h1>
 			<?php endif; ?>
-			
+
 			<?php get_template_part('templates/content', 'page'); ?>
 		</div>
 		<?php if( get_field('quote') ) : ?>
@@ -77,45 +77,47 @@ if( have_rows('carousel') ): ?>
 if( have_rows('l_items') ): ?>
 
 <section class="section cibles">
-	<div class="row column">
+	<div class="row">
 
-		<?php if (get_field('l_title')) : ?>
-		<h2 class="cedreo-title"><?php the_field('l_title'); ?></h2>
-		<?php endif; ?>
 
-		<div class="row grid medium-up-2">
+			<?php if (get_field('l_title')) : ?>
+				<h2 class="cedreo-title"><?php the_field('l_title'); ?></h2>
+			<?php endif; ?>
 
-		<?php 	// loop through the rows of data
-	    while ( have_rows('l_items') ) : the_row(); ?>
+			<div class="row grid medium-up-3">
 
-		        <div class="columns">
-					<figure class="effect-ming">
+			<?php 	// loop through the rows of data
+		    while ( have_rows('l_items') ) : the_row(); ?>
+			     <div class="columns">
+						<figure class="">
+							<?php
 
-						<?php 
+							$image = get_sub_field('img');
+							$size = 'soft';
+							$thumb = $image['sizes'][ $size ];
 
-						$image = get_sub_field('img');
-						$size = 'post-thumbnail';
-						$thumb = $image['sizes'][ $size ];
+							if( !empty($image) ): ?>
 
-						if( !empty($image) ): ?>
+								<img data-src="<?php echo $thumb; ?>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="<?php echo $image['alt']; ?>" />
 
-							<img data-src="<?php echo $thumb; ?>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="<?php echo $image['alt']; ?>" />
+							<?php endif; ?>
 
-						<?php endif; ?>
+							<?php if( get_sub_field('text') ) : ?>
+							<figcaption>
+								<div class="figcaption-wrapper">
+									<h3 class="h2 grid-title"><?php the_sub_field('text'); ?></h3>
+									<span class="acces"><?php the_sub_field('link_txt'); ?> &rarr;</span>
+									<a href="<?php the_sub_field('link'); ?>">y accéder</a>
+								</div>
+							</figcaption>
+							<?php endif; ?>
 
-						<?php if( get_sub_field('text') ) : ?>
-						<figcaption>
-							<h3 class="h2 grid-title"><?php the_sub_field('text'); ?></h3>
-							<div><span class="acces"><?php the_sub_field('link_txt'); ?> &rarr;</span></div>
-							<a href="<?php the_sub_field('link'); ?>">y accéder</a>
-						</figcaption>	
-						<?php endif; ?>
-						
-					</figure>
+						</figure>
 
-				</div>
+					</div>
 
-	    <?php endwhile; ?>
+		    <?php endwhile; ?>
+
 
 	</div>
 
