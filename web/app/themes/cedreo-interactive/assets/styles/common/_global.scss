@@ -72,6 +72,7 @@ h1, h2, .h1, .h2, blockquote, .lead {
 	display: block;
 	border-radius: 50%;
 	border: solid 0.4em transparent;
+	margin: auto;
 	background-color: map-get($foundation-palette, primary);
 }
 address {

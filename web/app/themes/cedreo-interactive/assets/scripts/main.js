@@ -20,14 +20,17 @@
       init: function() {
         // JavaScript to be fired on all pages
         // Normal Clicks
+      },
+      finalize: function() {
+        // JavaScript to be fired on all pages, after page specific JS is fired
 
         // Foundation init
-        $(document).foundation();
+        // $(document).foundation();
 
-        $('.cookies-message').cookieBar({ 
-          closeButton : '.button' 
+        $('.cookies-message').cookieBar({
+          closeButton : '.button'
         });
-        
+
         // Toggle nav
         $(function() {
           $('.toggle-nav').click(function() {
@@ -35,7 +38,7 @@
             $(this).toggleClass('is-active');
              return false;
           });
-          
+
         });
 
         // Toggle with hitting of ESC
@@ -48,8 +51,8 @@
 
         //Sories carousel
 
-        var stories =  $('.stories-carousel');
-        
+        var stories = $('.stories-carousel');
+
         // Stories
         stories.owlCarousel({
           loop:false,
@@ -74,7 +77,7 @@
         // Custom Navigation Events
         $(".stories .next").click(function(event) {
           event.preventDefault();
-          stories.trigger('next.owl.carousel');   
+          stories.trigger('next.owl.carousel');
         });
 
         $(".stories .prev").click(function(event) {
@@ -87,7 +90,7 @@
         $('.counter').counterUp();
 
         var meter = $('.progress-meter');
-        
+
         meter.waypoint(
           function(direction) {
             meter.addClass('animated');
@@ -97,7 +100,7 @@
         );
 
         var picto = $('.argpicto');
-        
+
         picto.waypoint(
           function(direction) {
             picto.addClass('animated');
@@ -105,20 +108,13 @@
             offset:'80%'
           }
         );
-
-        
-
-      },
-      finalize: function() {
-        // JavaScript to be fired on all pages, after page specific JS is fired
-        
       }
     },
     // Home page
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
-        
+
         // Carousel accueil
         $('.carousel').owlCarousel({
           items : 1,
@@ -137,7 +133,7 @@
     'page_template_page_logiciels': {
       init: function() {
         // JavaScript to be fired on the home page
-        
+
         // Carousel accueil
         $('.gallery-carousel').owlCarousel({
           items : 1,
