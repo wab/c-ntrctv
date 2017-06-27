@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "449d5a29a0f86f56c48bdce8cc83112c",
-    "content-hash": "d092a9d2c1b2acaf1989fadd225471b9",
+    "hash": "70c0b9cb28cac55be4afe2fea8019ebe",
+    "content-hash": "fc92a9e1843c4e6ffcd0f3b228b6fb10",
     "packages": [
         {
             "name": "composer/installers",
@@ -446,7 +446,7 @@
         },
         {
             "name": "toolbox-plugin/ninja-forms-uploads",
-            "version": "3.0.7",
+            "version": "3.0.8",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/wab/ninja-forms-uploads/archive/master.zip",
@@ -570,16 +570,16 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.5.3",
+            "version": "1.5.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.5.3"
+                "reference": "tags/1.5.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.5.3.zip",
-                "reference": "tags/1.5.3",
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.5.4.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -610,15 +610,15 @@
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "3.1.4",
+            "version": "3.1.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "tags/3.1.4"
+                "reference": "tags/3.1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.1.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.1.6.zip",
                 "reference": null,
                 "shasum": null
             },

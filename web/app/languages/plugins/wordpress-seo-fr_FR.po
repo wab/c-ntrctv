@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-15 14:15:08+0000\n"
+"PO-Revision-Date: 2017-06-25 08:10:34+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,10 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - Yoast SEO - Stable (latest release)\n"
+
+#: languages/yoast-seo-js.php:208
+msgid "The focus keyword appears only in %2$d (out of %1$d) subheadings in your copy. Try to use it in at least one more subheading."
+msgstr "Le mot-clé principal ne s’affiche que dans %2$d sous-titres (parmi %1$d) dans votre texte. Essayez de l’utiliser dans au moins un sous-titre supplémentaire."
 
 #: languages/yoast-seo-js.php:116
 msgid "No internal links appear in this page, consider adding some as appropriate."
@@ -58,6 +62,20 @@ msgstr "Faire défiler pour voir l’aperçu du contenu."
 #: languages/yoast-components.php:81
 msgid "Enter authorization code here..."
 msgstr "Saisissez le code d’autorisation ici&hellip;"
+
+#. translators: 1: open link tag 2: close link tag
+#: admin/views/tabs/dashboard/features.php:45
+msgid "The Cornerstone content functionality enables you to mark and filter cornerstone content on your website. %1$sRead more about how cornerstone content can help you improve your site structure.%2$s"
+msgstr "La fonctionnalité de contenu Cornerstone (articles importants) vous permet de marquer et filtrer le contenu important de votre site. %1$sEn lire plus sur la façon dont le contenu Cornerstone peut vous aider à améliorer la structure de votre site.%2$s"
+
+#: admin/views/tabs/dashboard/features.php:41
+msgid "Cornerstone content"
+msgstr "Contenu cornestone (important)"
+
+#. translators: %1$s expands to Yoast SEO.
+#: admin/config-ui/fields/class-field-success-message.php:19
+msgid "%1$s will now take care of all the needed technical optimization of your site. To really improve your site's performance in the search results, it's important to start creating content that ranks well for keywords you care about. Check out this video in which we explain how to use the %1$s metabox when you edit posts or pages."
+msgstr "%1$s va maintenant prendre en charge l’optimisation technique nécessaire pour votre site. Pour améliorer vraiment la performance de votre site dans les résultats de recherche, il est important de créer des contenus qui correspondent réellement aux mots-clés qui vous intéressent. Visionnez cette vidéo dans laquelle nous vous expliquons comment utiliser la méta boite de %1$s quand vous modifiez des articles ou des pages."
 
 #. translators: %s expands to Yoast SEO.
 #: admin/config-ui/fields/class-field-mailchimp-signup.php:25
@@ -114,6 +132,12 @@ msgstr "Dépassez la concurrence avec %s"
 #: admin/config-ui/components/class-component-configuration-choices.php:67
 msgid "Configuration service"
 msgstr "Service de configuration"
+
+#. translators: %1$s expands to 'Yoast SEO', %2$s expands to 'Yoast SEO
+#. Premium'.
+#: admin/config-ui/components/class-component-configuration-choices.php:61
+msgid "While we strive to make setting up %1$s as easy as possible, we understand it can still be daunting. If you would rather have us set up %1$s for you (and get a copy of %2$s in the process), order a %1$s configuration service and sit back while we configure your site."
+msgstr "Nous nous efforçons de rendre la configuration de %1$s aussi simple que possible et comprenons que cela peut encore être difficile pour vous. Si vous préférez que nous configurions %1$s pour vous (en obtenant une copie de %2$s dans la foulée), alors commandez notre service de configuration %1$s et relaxez-vous pendant que nous configurons votre site."
 
 #. translators: %s expands to 'Yoast SEO'.
 #: admin/config-ui/components/class-component-configuration-choices.php:48
@@ -218,6 +242,17 @@ msgstr "Bonne nouvelle : vous pouvez le faire, avec %1$s !"
 msgid "Save changes"
 msgstr "Enregistrer les modifications"
 
+#: admin/class-premium-popup.php:75
+msgid "1 year free updates and upgrades included!"
+msgstr "1 an de mises à jour gratuites inclus !"
+
+#. translators: %2$s expands to 'RS Head Cleaner' plugin name of possibly
+#. conflicting plugin with regard to differentiating output between search
+#. engines and normal users.
+#: admin/class-plugin-conflict.php:160
+msgid "The plugin %2$s changes your site's output and in doing that differentiates between search engines and normal users, a process that's called cloaking. We highly recommend that you disable it."
+msgstr "L’extension %2$s modifie l'apparence de votre site et, ce faisant, elle diffère entre les moteurs de recherche et les utilisateurs normaux, c’est un processus qui se nomme cloaking. Nous vous recommandons vivement de la désactiver."
+
 #: admin/class-help-center.php:72
 #: admin/metabox/class-metabox-add-keyword-tab.php:42
 msgid "Superfast internal links suggestions"
@@ -289,6 +324,14 @@ msgstr "Mots clés multiples"
 #: admin/banner/class-admin-banner-sidebar.php:91
 msgid "Get %1$s"
 msgstr "Obtenir %1$s"
+
+#. Translators: %1$s opens a link to a Yoast article about stop words, %2$s
+#. closes the link
+#: languages/yoast-seo-js.php:161
+msgid "The focus keyword contains a stop word. This may or may not be wise depending on the circumstances. %1$sLearn more about the stop words%2$s."
+msgid_plural "The focus keyword contains %3$d stop words. This may or may not be wise depending on the circumstances. %1$sLearn more about the stop words%2$s."
+msgstr[0] "Le mot-clé principal contient un mot d’arrêt. Cela peut possiblement être recommandé selon les circonstances. %1$sApprenez-en plus sur les mots d’arrêt%2$s."
+msgstr[1] "Le mot-clé principal contient %3$d mots d’arrêt. Cela peut possiblement être recommandé selon les circonstances. %1$sApprenez-en plus sur les mots d’arrêt%2$s."
 
 #: admin/views/tabs/advanced/rss.php:33 inc/class-wpseo-replace-vars.php:1031
 msgid "Variable"
@@ -507,6 +550,12 @@ msgstr "Besoin d’aide pour déterminer vos paramètres ? Configurer %1$s éta
 msgid "No new notifications."
 msgstr "Aucune nouvelle notification."
 
+#. translators: %1$s expands anchor to knowledge base article, %2$s expands to
+#. </a>
+#: admin/google_search_console/views/gsc-display.php:126
+msgid "Please refer to %1$sour article about how to connect your website to Google Search Console%2$s if you need assistance."
+msgstr "Veuillez vous référer à %1$snotre article pour savoir comment connecter votre site à la Google Search Console%2$s si vous avez besoin d’aide."
+
 #: admin/class-bulk-editor-list-table.php:857
 msgid "Save all"
 msgstr "Tout enregistrer"
@@ -536,6 +585,11 @@ msgstr "Les données de wpSEO ont été importées. Voulez-vous %1$sdésactiver 
 #: admin/class-import-aioseo.php:64
 msgid "All in One SEO data successfully imported. Would you like to %1$sdisable the All in One SEO plugin%2$s?"
 msgstr "Les données de All in One SEO ont été importées. Voulez-vous %1$sdésactiver l’extension All in One SEO%2$s ?"
+
+#. translators: 1,2: link open tag; 3: link close tag.
+#: admin/class-import-aioseo.php:55
+msgid "All in One SEO data successfully imported. Would you like to %1$sdisable the All in One SEO plugin%3$s? You've had Google Analytics enabled in All in One SEO, would you like to install our %2$sGoogle Analytics plugin%3$s?"
+msgstr "Les données de All in One SEO ont bien été importées. Voulez-vous %1$sdésactiver l’extension All in One SEO%3$s ? Vous aviez Google Analytics d'activé dans All in One SEO, souhaitez-vous installer notre extension %2$sGoogle Analytics%3$s ?"
 
 #: languages/yoast-seo-js.php:386
 msgid "Mobile preview"
@@ -3444,7 +3498,7 @@ msgstr "Archives des types de contenu personnalisés"
 #: admin/views/tabs/metas/post-types.php:44
 #: admin/views/tabs/metas/taxonomies.php:43
 msgid "%1$s Meta Box"
-msgstr "%1$s Méta Box"
+msgstr "%1$s Méta boite"
 
 #: admin/views/tabs/advanced/breadcrumbs.php:32
 #: admin/views/tabs/metas/post-types.php:38
@@ -3494,7 +3548,7 @@ msgstr "Modèle des Méta keywords "
 #: admin/views/tabs/metas/post-types.php:31
 #: admin/views/tabs/metas/taxonomies.php:31
 msgid "Meta description template"
-msgstr "Modèle de Méta description&nbsp;"
+msgstr "Modèle de méta description&nbsp;"
 
 #: admin/views/tabs/metas/archives.php:32
 #: admin/views/tabs/metas/archives.php:51
@@ -4231,6 +4285,10 @@ msgstr "Vous n’avez utilisé le mot-clé dans aucun sous-titre (comme un H2) d
 msgid "The images on this page are missing alt attributes."
 msgstr "Les images sur cette page ne contiennent pas de balise alternative (attribut alt)."
 
+#: languages/yoast-seo-js.php:182
+msgid "No outbound links appear in this page, consider adding some as appropriate."
+msgstr "Aucun lien n’apparaît dans cette page, vous devriez envisager d’en ajouter."
+
 #: languages/yoast-seo-js.php:189
 msgid "This page has %1$s nofollowed outbound link(s) and %2$s normal outbound link(s)."
 msgstr "Cette page a %1$s lien(s) en nofollow et %2$s lien(s) externe(s) suivi(s) par les moteurs de recherche."
@@ -4654,7 +4712,7 @@ msgstr "Google+"
 
 #: admin/class-admin.php:486
 msgid "FAQ"
-msgstr "Questions"
+msgstr "FAQ"
 
 #: admin/class-admin.php:482
 msgid "Premium Support"
