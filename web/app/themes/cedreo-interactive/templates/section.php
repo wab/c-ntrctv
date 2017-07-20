@@ -17,27 +17,27 @@ if( have_rows('section') ): ?>
 
 	        	<?php if (get_sub_field('media') == 'image') : ?>
 
-	        		<?php 
+	        		<?php
 	        			$image = get_sub_field('media-img');
 	        			// thumbnail
-						$size = 'square';
-						$thumb = $image['sizes'][ $size ];
+								$size = 'square';
+								$thumb = $image['sizes'][ $size ];
 	        		?>
 
 	        		<?php if( !empty($image) ): ?>
 
-						<img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
+								<img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
 
-					<?php endif; ?>
+							<?php endif; ?>
 
 	        	<?php else : ?>
-					
-					<div class="flex-video widescreen">
-						<iframe type="text/html" src="https://www.youtube.com/embed/<?php the_sub_field('media-video'); ?>?controls=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
-					</div>
 
-	        	<?php endif ?>
-	        		
+							<div class="flex-video widescreen">
+								<iframe type="text/html" src="https://www.youtube.com/embed/<?php the_sub_field('media-video'); ?>?controls=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+							</div>
+
+	        	<?php endif; ?>
+
 	        	</div>
 
 	        <div class="contenu medium-8 columns">
@@ -45,7 +45,7 @@ if( have_rows('section') ): ?>
 	        	<?php if ( get_sub_field('action-link')) : ?>
 	        		<p><a href="<?php the_sub_field('action-link'); ?>" class="button"><?php the_sub_field('action-title'); ?></a></p>
 	        	<?php endif ?>
-	        	
+
 	        </div>
 
 		</div>
