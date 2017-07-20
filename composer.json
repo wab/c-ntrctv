@@ -153,7 +153,7 @@
     "deliciousbrains/wp-migrate-db-pro-media-files": "*",
     "deliciousbrains/wp-migrate-db-pro-cli": "*",
     "wpackagist-plugin/types": "^2",
-    "wpackagist-plugin/wordpress-seo": "^4.0",
+    "wpackagist-plugin/wordpress-seo": "^5",
     "wpackagist-plugin/polylang": "^2",
     "wpackagist-plugin/ninja-forms": "~3",
     "wpackagist-plugin/regenerate-thumbnails": "^2",

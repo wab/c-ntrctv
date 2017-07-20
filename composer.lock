@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "70c0b9cb28cac55be4afe2fea8019ebe",
-    "content-hash": "fc92a9e1843c4e6ffcd0f3b228b6fb10",
+    "hash": "03ec8b7635e6c2190a2cd0c676095379",
+    "content-hash": "850611350e7980e28d5dcc18b85b674d",
     "packages": [
         {
             "name": "composer/installers",
@@ -260,16 +260,16 @@
         },
         {
             "name": "oscarotero/env",
-            "version": "v1.0.2",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/env.git",
-                "reference": "0819fd764ca19ab880b8d9ed7a95ae4910f98f20"
+                "reference": "0f676e41d758fa984806c32e27f0cf7afa63d8db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/env/zipball/0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
-                "reference": "0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
+                "url": "https://api.github.com/repos/oscarotero/env/zipball/0f676e41d758fa984806c32e27f0cf7afa63d8db",
+                "reference": "0f676e41d758fa984806c32e27f0cf7afa63d8db",
                 "shasum": ""
             },
             "require": {
@@ -298,7 +298,7 @@
             "keywords": [
                 "env"
             ],
-            "time": "2016-05-08 17:14:32"
+            "time": "2017-07-17 20:41:59"
         },
         {
             "name": "roots/soil",
@@ -530,15 +530,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "3.3.2",
+            "version": "3.3.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/3.3.2"
+                "reference": "tags/3.3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.3.3.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.3.3.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -590,15 +590,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "5.0",
+            "version": "5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/5.0"
+                "reference": "tags/5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.5.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.5.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -630,15 +630,15 @@
         },
         {
             "name": "wpackagist-plugin/polylang",
-            "version": "2.1.5",
+            "version": "2.1.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/polylang/",
-                "reference": "tags/2.1.5"
+                "reference": "tags/2.1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/polylang.2.1.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang.2.1.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -650,15 +650,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "2.6.2",
+            "version": "2.6.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/2.6.2"
+                "reference": "tags/2.6.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.2.6.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.2.6.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -710,15 +710,15 @@
         },
         {
             "name": "wpackagist-plugin/vaultpress",
-            "version": "1.9.0",
+            "version": "1.9.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/vaultpress/",
-                "reference": "tags/1.9.0"
+                "reference": "tags/1.9.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/vaultpress.1.9.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/vaultpress.1.9.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -750,15 +750,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "4.9",
+            "version": "5.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/4.9"
+                "reference": "tags/5.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.9.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.0.2.zip",
                 "reference": null,
                 "shasum": null
             },
