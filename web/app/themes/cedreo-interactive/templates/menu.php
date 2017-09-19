@@ -1,35 +1,35 @@
 <nav class="main-navigation">
 	<div class="menu-row">
-		<?php if (has_nav_menu('secteurs')) : ?> 
+		<?php if (has_nav_menu('secteurs')) : ?>
 		<div class="menu-section">
-			
+
 			<h2 class="subheader">Les secteurs d'activité</h2>
-			
+
 			<?php wp_nav_menu(['theme_location' => 'secteurs', 'menu_class' => 'menu vertical']); ?>
-			
+
 		</div> <!-- menu-section -->
 		<?php endif; ?>
 
-		<?php if (has_nav_menu('logiciels')) : ?> 
+		<!-- <?php if (has_nav_menu('logiciels')) : ?>
 		<div class="menu-section">
-			
+
 			<h2 class="subheader">Nos solutions logicielles</h2>
-			
+
 			<?php wp_nav_menu(['theme_location' => 'logiciels', 'menu_class' => 'menu vertical']); ?>
-			
+
+		</div> <!-- menu-section -->
+		<?php endif; ?> -->
+
+		<?php if (has_nav_menu('cedreo')) : ?>
+		<div class="menu-section">
+
+			<h2 class="subheader">Cedreo</h2>
+
+			<?php wp_nav_menu(['theme_location' => 'cedreo', 'menu_class' => 'menu vertical']); ?>
+
 		</div> <!-- menu-section -->
 		<?php endif; ?>
 
-		<?php if (has_nav_menu('cedreo')) : ?> 
-		<div class="menu-section">
-			
-			<h2 class="subheader">Cedreo</h2>
-			
-			<?php wp_nav_menu(['theme_location' => 'cedreo', 'menu_class' => 'menu vertical']); ?>
-			
-		</div> <!-- menu-section -->
-		<?php endif; ?>
-		
 		<div class="menu-section">
 			<h2 class="subheader">Nous suivre</h2>
 			<ul class="menu vertical">

@@ -49,7 +49,7 @@
 
 // header
 
-$header-height : 12vh;
+$header-height : rem-calc(120);
 $footer-height : $header-height;
 
 // menu btn

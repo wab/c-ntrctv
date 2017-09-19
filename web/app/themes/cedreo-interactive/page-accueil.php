@@ -107,7 +107,7 @@ if( have_rows('l_items') ): ?>
 								<div class="figcaption-wrapper">
 									<h3 class="h2 grid-title"><?php the_sub_field('text'); ?></h3>
 									<span class="acces"><?php the_sub_field('link_txt'); ?> &rarr;</span>
-									<a href="<?php the_sub_field('link'); ?>">y accéder</a>
+									<a href="<?php the_sub_field('link'); ?>" target="_blank">y accéder</a>
 								</div>
 							</figcaption>
 							<?php endif; ?>
