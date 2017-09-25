@@ -1,217 +1,221 @@
-body{
-	//overflow: hidden;
+body {
+  //overflow: hidden;
 }
+
 .section {
-	padding: 3rem 0;
-	.row {
-		position: relative;
-	}
+  padding: 3rem 0;
+
+  .row {
+    position: relative;
+  }
 }
 
 .cedreo-title {
-	text-align: center;
-	text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 
-	.contenu & {
-		text-align: left;
-	}
+  .contenu & {
+    text-align: left;
+  }
 
-	&:after {
-		content: '';
-		display: block;
-		width: 200px;
-		margin: 0.5em auto 2em auto;
-		height: 1px;
-		background: $body-font-color;
+  &:after {
+    background: $body-font-color;
+    content: '';
+    display: block;
+    height: 1px;
+    margin: 0.5em auto 2em auto;
+    width: 200px;
 
-		.contenu & {
-			margin-left: 0;
-		}
+    .contenu & {
+      margin-left: 0;
+    }
 
-		.arguments & {
-			background: $body-background;
-		}
-	}
-
+    .arguments & {
+      background: $body-background;
+    }
+  }
 }
 
 .breadcrumbs {
+  position: relative;
+  text-align: center;
+  z-index: 100;
 
-	text-align: center;
-	position: relative;
-	z-index: 100;
+  ul {
+    display: inline-block;
+    margin-bottom: 0;
+    @include breadcrumbs-container;
 
-	ul {
-		@include breadcrumbs-container;
-		margin-bottom: 0;
-		display: inline-block;
+    a {
+      color: $body-font-color;
 
-		a {
-			color: $body-font-color;
+      .banshadow & {
+        color: $body-background;
+      }
+    }
 
-			.banshadow & {
-				color: $body-background;
-			}
-
-		}
-
-		.current {
-			color: map-get($foundation-palette, primary);
-		}
-	}
+    .current {
+      color: map-get($foundation-palette, primary);
+    }
+  }
 }
 
-h1, h2, .h1, .h2, blockquote, .lead {
-	span {
-		color: map-get($foundation-palette, primary);
-		font-weight: 700;
-	}
+h1,
+h2,
+.h1,
+.h2,
+blockquote,
+.lead {
+  span {
+    color: map-get($foundation-palette, primary);
+    font-weight: 700;
+  }
 }
 
 .img-rounded {
-	display: block;
-	border-radius: 50%;
-	border: solid 0.4em transparent;
-	margin: auto;
-	background-color: map-get($foundation-palette, primary);
+  background-color: map-get($foundation-palette, primary);
+  border: solid 0.4em transparent;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
 }
+
 address {
-	font-style: normal;
-	text-transform: uppercase;
+  font-style: normal;
+  text-transform: uppercase;
 }
+
 blockquote {
+  .contenu & {
+    @extend .clearfix;
+    font-style: italic;
+  }
 
-	.contenu & {
-		font-style: italic;
-		@extend .clearfix;
-	}
+  .temoignages & {
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    margin: map-get($grid-column-gutter, small);
+    padding: map-get($grid-column-gutter, small);
+    position: relative;
 
+    @include breakpoint(medium) {
+      margin: map-get($grid-column-gutter, medium);
+      padding: map-get($grid-column-gutter, medium);
+    }
 
-	.temoignages & {
+    cite {
+      color: map-get($foundation-palette, primary);
+    }
 
-		border: none;
-		position: relative;
-		background: rgba(0,0,0,0.4);
-
-		margin: map-get($grid-column-gutter, small);
-		padding: map-get($grid-column-gutter, small);
-
-		@include breakpoint(medium) {
-			margin: map-get($grid-column-gutter, medium);
-			padding: map-get($grid-column-gutter, medium);
-		}
-
-		cite {
-			color: map-get($foundation-palette, primary);
-		}
-
-		&:before {
-			content: '';
-			display: inline-block;
-			position: absolute;
-			width: 32px;
-			height: 28px;
-			top: -12px;
-			left: -20px;
-			background: url(../images/quote.png) center no-repeat;
-		}
-
-	}
+    &:before {
+      background: url(../images/quote.png) center no-repeat;
+      content: '';
+      display: inline-block;
+      height: 28px;
+      left: -20px;
+      position: absolute;
+      top: -12px;
+      width: 32px;
+    }
+  }
 }
 
 .lead {
-	font-family: $header-font-family;
-	text-transform: uppercase;
-	span, i {
-		color: map-get($foundation-palette, primary);
-	}
+  font-family: $header-font-family;
+  text-transform: uppercase;
+
+  span,
+  i {
+    color: map-get($foundation-palette, primary);
+  }
 }
 
 .page-header {
-	min-height: 25vh;
-	display: flex;
-	position: relative;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: $dark-gray;
-	background-image: url(../images/banners/cedreo.jpg);
+  align-items: center;
+  background-color: $dark-gray;
+  background-image: url(../images/banners/cedreo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  min-height: 25vh;
+  position: relative;
 
-	&:before {
-		content: '';
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom:0;
-		background: rgba(0,0,0,0.6);
-	}
+  &:before {
+    background: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
+  .page-template-page-secteur & {
+    background-image: url(../images/banners/secteurs.jpg);
+  }
 
-	.page-template-page-secteur & {
-		background-image: url(../images/banners/secteurs.jpg);
-	}
+  .single-logiciel & {
+    background-image: url(../images/banners/logiciels.jpg);
+  }
 
-	.single-logiciel & {
-		background-image: url(../images/banners/logiciels.jpg);
-	}
+  .sidebar-primary & {
+    background-image: url(../images/banners/blog.jpg);
+  }
 
-	.sidebar-primary & {
-		background-image: url(../images/banners/blog.jpg);
-	}
+  .page-title {
+    color: $white;
+    letter-spacing: 0.05em;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 100;
 
-	.page-title {
-		text-align: center;
-		color: $white;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-		position: relative;
-		z-index: 100;
-
-		&:after {
-			background: none;
-			margin: 0;
-		}
-	}
+    &:after {
+      background: none;
+      margin: 0;
+    }
+  }
 }
 
 .banshadow {
-	@include breakpoint(large) {
-
-		&:after {
-			content: '';
-			display: block;
-			width: 100%;
-			height: 25px;
-			background: url(../images/shadow-carousel.png) top center no-repeat;
-			background-size: 70%;
-		}
-
-	}
+  @include breakpoint(large) {
+    &:after {
+      background: url(../images/shadow-carousel.png) top center no-repeat;
+      background-size: 70%;
+      content: '';
+      display: block;
+      height: 25px;
+      width: 100%;
+    }
+  }
 }
 
 .stories {
-	.item {
-		text-transform: uppercase;
-	}
+  .item {
+    text-transform: uppercase;
+  }
 }
 
 .cookies-message {
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	padding: 0.8em;
-	background: rgba(0,0,0,0.8);
-	color: $white;
-	z-index: 800;
-	font-size: 0.8rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: $white;
+  font-size: 0.8rem;
+  left: 0;
+  padding: 0.8em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 800;
 
-	.button {
-		margin-bottom: 0;
-	}
+  .button {
+    margin-bottom: 0;
+  }
+}
+
+.marketing {
+  @include element-invisible;
 }
