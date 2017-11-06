@@ -4,9 +4,6 @@
  * Template Name: Page entreprise
  */
 
-// The Query for arguments
-$arguments = new WP_Query( array( 'pagename' => 'accueil' ) );
-
 ?>
 <?php while (have_posts()) : the_post(); ?>
 	<?php get_template_part('templates/page', 'header'); ?>
@@ -23,28 +20,41 @@ $arguments = new WP_Query( array( 'pagename' => 'accueil' ) );
 				<?php endif; ?>
 				<?php get_template_part('templates/content', 'page'); ?>
 			</div>
-				
+
 		</div>
 	</div>
 
-	<?php get_template_part('templates/section'); ?>
+	<section class="section valeurs">
+		<?php $v_image = get_field('v_image'); ?>
+		<?php if( !empty($v_image) ) : ?>
+				<?php
+						// vars
+						$vurl = $v_image['url'];
+						$vtitle = $v_image['title'];
+						$valt = $v_image['alt'];
+						$vcaption = $v_image['caption'];
 
-	<?php if ( $arguments->have_posts() ) : ?>
-
-	<!-- pagination here -->
-
-	<!-- the loop -->
-	<?php while ( $arguments->have_posts() ) : $arguments->the_post(); ?>
-		<?php get_template_part('templates/section', 'arguments'); ?>
-	<?php endwhile; ?>
-	<!-- end of the loop -->
-
-	<!-- pagination here -->
-
-	<?php wp_reset_postdata(); ?>
-
-	<?php endif; ?>
-
+						// thumbnail
+						$vsize = 'large';
+						$vthumb = $v_image['sizes'][ $vsize ];
+				?>
+			<div class="row">
+				<div class="columns medium-10 medium-offset-1">
+				<?php if(get_field('v_title')): ?>
+				<h2 class="cedreo-title subtitle"><?php the_field('v_title'); ?></h2>
+				<?php endif; ?>
+					<figure class="thumbnail">
+						<img src="<?php echo $vthumb; ?>" alt="<?php echo $valt; ?>">
+					</figure>
+				</div>
+			</div>
+				<?php endif; ?>
+		<div class="row">
+			<div class="columns medium-8 medium-offset-2">
+				<?php if(get_field('v_text')) { the_field('v_text'); } ?>
+			</div>
+		</div>
+	</section>
 	<section class="section competences contenu">
 		<div class="row">
 			<div class="columns medium-6">
@@ -68,7 +78,7 @@ $arguments = new WP_Query( array( 'pagename' => 'accueil' ) );
 				        <li><?php the_sub_field('title'); ?>
 				        	<div class="progress" role="progressbar" tabindex="0" aria-valuenow="<?php the_sub_field('value'); ?>" aria-valuemin="0" aria-valuetext="<?php the_sub_field('value'); ?> percent" aria-valuemax="100">
 				        		<div style="width: <?php the_sub_field('value'); ?>%; height: 100%"><div class="progress-meter"></div></div>
-							  
+
 							</div>
 				        </li>
 
@@ -86,7 +96,7 @@ $arguments = new WP_Query( array( 'pagename' => 'accueil' ) );
 			<?php endif; ?>
 		</div>
 	</section>
-	
+
 	<?php if( have_rows('members') ): ?>
 	<section class="section equipe grid">
 		<div class="row column">
