@@ -50,7 +50,7 @@
 			</div>
 				<?php endif; ?>
 		<div class="row">
-			<div class="columns medium-8 medium-offset-2">
+			<div class="columns medium-10 medium-offset-1">
 				<?php if(get_field('v_text')) { the_field('v_text'); } ?>
 			</div>
 		</div>
