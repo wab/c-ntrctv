@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Ninja Forms &#8211; The Easy and Powerful Forms Builder - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-10-13 14:19:15+0000\n"
+"PO-Revision-Date: 2018-01-03 13:28:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,15 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - Ninja Forms &#8211; The Easy and Powerful Forms Builder - Stable (latest release)\n"
+
+#: includes/Templates/admin-metabox-import-export-forms-export.html.php:22
+#: includes/Templates/admin-metabox-import-export-forms-import.html.php:17
+msgid "Disable UTF-8 Encoding"
+msgstr "Deshabilitar la codificación UTF-8"
+
+#: includes/Config/MergeTagsForm.php:27
+msgid "Submission Count"
+msgstr "Cuenta de envíos "
 
 #: includes/Fields/Confirm.php:41
 msgid "Fields do not match."
@@ -34,10 +43,6 @@ msgstr "%sNo, por favor no recopiles errores u otros datos.%s"
 #: lib/NF_Tracking.php:113
 msgid "%sYes, I want to make Ninja Forms better!%s"
 msgstr "%sSí, ¡quiero mejorar Ninja Forms!%s"
-
-#: includes/Templates/admin-menu-system-status.html.php:59
-msgid "Recent Errors"
-msgstr "Errores recientes"
 
 #: includes/Templates/admin-menu-system-status.html.php:53
 msgid "Activated Plugins"
@@ -95,7 +100,7 @@ msgstr "Visibilidad"
 msgid "Allow Tracking"
 msgstr "Permitir seguimiento"
 
-#: includes/Admin/Menus/SystemStatus.php:149
+#: includes/Admin/Menus/SystemStatus.php:160
 msgid "None Logged"
 msgstr "Nadie conectado"
 
@@ -135,11 +140,11 @@ msgstr "Corrija el Importe"
 msgid "Get Total From"
 msgstr "Obtener el total de"
 
-#: includes/Admin/Menus/SystemStatus.php:131
+#: includes/Admin/Menus/SystemStatus.php:142
 msgid "Not Supported"
 msgstr "No compatible"
 
-#: includes/Admin/Menus/SystemStatus.php:131
+#: includes/Admin/Menus/SystemStatus.php:142
 msgid "Supported"
 msgstr "Compatible"
 
@@ -365,12 +370,12 @@ msgid "User IP Address"
 msgstr "Dirección IP de usuario"
 
 #: includes/Config/MergeTagsFieldsAJAX.php:16
-#: includes/Config/MergeTagsForm.php:35
+#: includes/Config/MergeTagsForm.php:48
 msgid "Fields Table"
 msgstr "Tabla de campos"
 
 #: includes/Config/MergeTagsFieldsAJAX.php:8
-#: includes/Config/MergeTagsForm.php:28
+#: includes/Config/MergeTagsForm.php:41
 msgid "All Fields Table"
 msgstr "Tabla de todos los campos"
 
@@ -445,13 +450,9 @@ msgstr "¿Qué aspecto tendré?"
 msgid "The form has reached its submission limit."
 msgstr "Has alcanzado el límite de envíos en el formulario."
 
-#: includes/Config/FieldSettings.php:949
+#: includes/Config/FieldSettings.php:976
 msgid "Use Inline Quantity"
 msgstr "Utilizar el selector de cantidad"
-
-#: includes/Admin/Menus/SystemStatus.php:160
-msgid "TLS Version"
-msgstr "Versión TLS"
 
 #: includes/Admin/Menus/Settings.php:57
 msgid "Please be aware that there is an issue with Contact Form 7 that breaks reCAPTCHA in other plugins.%sIf you need to use reCAPTCHA on any of your Ninja Forms, you will need to disable Contact Form 7."
@@ -538,27 +539,27 @@ msgstr "Autor de la entrada"
 msgid "Custom Labels"
 msgstr "Etiquetas personalizadas"
 
-#: includes/Config/FieldSettings.php:466
+#: includes/Config/FieldSettings.php:493
 msgid "End Year"
 msgstr "Año de fin"
 
-#: includes/Config/FieldSettings.php:460
+#: includes/Config/FieldSettings.php:487
 msgid "Start Year"
 msgstr "Año de inicio"
 
-#: includes/Config/FieldSettings.php:453
+#: includes/Config/FieldSettings.php:480
 msgid "Year Range"
 msgstr "Rango de años"
 
-#: includes/Config/FieldSettings.php:423
+#: includes/Config/FieldSettings.php:450
 msgid "YYYY.MM.DD"
 msgstr "AAAA.MM.DD"
 
-#: includes/Config/FieldSettings.php:411
+#: includes/Config/FieldSettings.php:438
 msgid "MM.DD.YYYY"
 msgstr "MM.DD.AAAA"
 
-#: includes/Config/FieldSettings.php:399
+#: includes/Config/FieldSettings.php:426
 msgid "DD.MM.YYYY"
 msgstr "DD.MM.AAAA"
 
@@ -692,7 +693,10 @@ msgstr "¡Eres elegible para actualizar a Ninja Forms THREE! %sActualiza ahora%s
 msgid "Field type \"%s\" not found."
 msgstr "No se ha encontrado el tipo de campo \"%s\"."
 
-#: includes/Fields/Unknown.php:28
+#: deprecated/includes/admin/pages/system-status-html.php:97
+#: deprecated/includes/admin/pages/system-status-html.php:109
+#: includes/Admin/Menus/SystemStatus.php:87
+#: includes/Admin/Menus/SystemStatus.php:94 includes/Fields/Unknown.php:28
 msgid "Unknown"
 msgstr "Desconocido"
 
@@ -732,15 +736,15 @@ msgstr "Contáctanos"
 msgid "Available"
 msgstr "Disponible"
 
-#: includes/Admin/Menus/ImportExport.php:45
+#: includes/Admin/Menus/ImportExport.php:56
 msgid "Invalid Form Upload."
 msgstr "Subida de formulario no válida."
 
-#: includes/Admin/Menus/ImportExport.php:44
+#: includes/Admin/Menus/ImportExport.php:55
 msgid "There uploaded file is not a valid format."
 msgstr "El archivo subido no tiene un formato válido."
 
-#: includes/Admin/Menus/Forms.php:163
+#: includes/Admin/Menus/Forms.php:165
 msgid "Form Template Import Error."
 msgstr "Error en la importación de la plantilla de formulario."
 
@@ -1000,7 +1004,7 @@ msgstr "d-m-A"
 msgid "Ninja Forms shortcode used without specifying a form."
 msgstr "Shortcode de Ninja Forms utilizado sin especificar un formulario."
 
-#: includes/Database/Models/Form.php:370
+#: includes/Database/Models/Form.php:375
 msgid "Save Form"
 msgstr "Guardar formulario"
 
@@ -1348,57 +1352,57 @@ msgstr "Envío de Ninja Forms"
 msgid "Your form has been successfully submitted."
 msgstr "Tu formulario ha sido enviado con éxito."
 
-#: includes/Config/FieldSettings.php:427
+#: includes/Config/FieldSettings.php:454
 msgid "Friday, November 18, 2019"
 msgstr "Viernes, Noviembre 18, 2019"
 
-#: includes/Config/FieldSettings.php:419
+#: includes/Config/FieldSettings.php:446
 msgid "YYYY/MM/DD"
 msgstr "AAAA/MM/DD"
 
-#: includes/Config/FieldSettings.php:415
+#: includes/Config/FieldSettings.php:442
 msgid "YYYY-MM-DD"
 msgstr "AAAA-MM-DD"
 
-#: includes/Config/FieldSettings.php:407
+#: includes/Config/FieldSettings.php:434
 msgid "MM-DD-YYYY"
 msgstr "MM-DD-AAAA"
 
-#: includes/Config/FieldSettings.php:403
+#: includes/Config/FieldSettings.php:430
 msgid "MM/DD/YYYY"
 msgstr "MM/DD/AAAA"
 
-#: includes/Config/FieldSettings.php:395
+#: includes/Config/FieldSettings.php:422
 msgid "DD-MM-YYYY"
 msgstr "DD-MM-AAAA"
 
-#: includes/Config/FieldSettings.php:391
+#: includes/Config/FieldSettings.php:418
 msgid "DD/MM/YYYY"
 msgstr "DD/MM/AAAA"
 
-#: includes/Config/FieldSettings.php:160
+#: includes/Config/FieldSettings.php:187
 msgid "three"
 msgstr "tres"
 
-#: includes/Config/FieldSettings.php:160 includes/Config/FieldSettings.php:1018
+#: includes/Config/FieldSettings.php:187 includes/Config/FieldSettings.php:1045
 #: includes/Database/MockData.php:141
 msgid "Three"
 msgstr "Tres"
 
-#: includes/Config/FieldSettings.php:159
+#: includes/Config/FieldSettings.php:186
 msgid "two"
 msgstr "dos"
 
-#: includes/Config/FieldSettings.php:159 includes/Config/FieldSettings.php:1017
+#: includes/Config/FieldSettings.php:186 includes/Config/FieldSettings.php:1044
 #: includes/Database/MockData.php:134
 msgid "Two"
 msgstr "Dos"
 
-#: includes/Config/FieldSettings.php:158
+#: includes/Config/FieldSettings.php:185
 msgid "one"
 msgstr "uno"
 
-#: includes/Config/FieldSettings.php:158 includes/Config/FieldSettings.php:1016
+#: includes/Config/FieldSettings.php:185 includes/Config/FieldSettings.php:1043
 #: includes/Database/MockData.php:127
 msgid "One"
 msgstr "Uno"
@@ -1407,7 +1411,7 @@ msgstr "Uno"
 msgid "one_week_support"
 msgstr "one_week_support"
 
-#: includes/Admin/Menus/Submissions.php:266
+#: includes/Admin/Menus/Submissions.php:270
 msgid "button-secondary nf-download-all"
 msgstr "button-secondary nf-download-all"
 
@@ -1455,7 +1459,7 @@ msgstr "Secuencia de envío"
 msgid "Invalid form id"
 msgstr "Id. de formulario no válido"
 
-#: includes/Config/FieldSettings.php:825 includes/Database/Models/Form.php:631
+#: includes/Config/FieldSettings.php:852 includes/Database/Models/Form.php:636
 #: includes/Fields/Confirm.php:26
 msgid "Confirm"
 msgstr "Confirmar"
@@ -1472,11 +1476,11 @@ msgstr "Estilos predefinidos"
 msgid "Default Label Position"
 msgstr "Ubicación predeterminada de la etiqueta "
 
-#: includes/Config/FieldSettings.php:1119
+#: includes/Config/FieldSettings.php:1146
 msgid "Add New Terms"
 msgstr "Añadir nuevos términos"
 
-#: includes/Config/FieldSettings.php:356
+#: includes/Config/FieldSettings.php:383
 msgid "Container"
 msgstr "Contenedor"
 
@@ -1516,7 +1520,7 @@ msgstr "Términos disponibles"
 msgid "Terms List"
 msgstr "Lista de términos"
 
-#: includes/Config/FieldSettings.php:1101
+#: includes/Config/FieldSettings.php:1128
 msgid "Taxonomy"
 msgstr "Taxonomía"
 
@@ -1528,7 +1532,7 @@ msgstr "Divisor"
 msgid "Single Line Text"
 msgstr "Campo de texto"
 
-#: includes/Fields/Checkbox.php:30
+#: includes/Fields/Checkbox.php:34
 msgid "Single Checkbox"
 msgstr "Casilla individual"
 
@@ -1630,7 +1634,7 @@ msgstr "Lista de casillas de opciones"
 msgid "Checkbox List"
 msgstr "Lista de casillas"
 
-#: includes/Database/Models/Form.php:655 includes/Fields/CreditCardZip.php:23
+#: includes/Database/Models/Form.php:660 includes/Fields/CreditCardZip.php:23
 msgid "Credit Card Zip"
 msgstr "Código postal de la tarjeta de crédito"
 
@@ -1655,15 +1659,11 @@ msgstr "CVC de la tarjeta de crédito"
 msgid "City"
 msgstr "Ciudad"
 
-#: includes/Fields/Checkbox.php:53 includes/Fields/Checkbox.php:54
-#: includes/Fields/Checkbox.php:62 includes/Fields/Checkbox.php:72
-#: includes/Fields/Checkbox.php:76
+#: includes/Fields/Checkbox.php:153
 msgid "unchecked"
 msgstr "desmarcado"
 
-#: includes/Fields/Checkbox.php:52 includes/Fields/Checkbox.php:54
-#: includes/Fields/Checkbox.php:61 includes/Fields/Checkbox.php:71
-#: includes/Fields/Checkbox.php:74
+#: includes/Fields/Checkbox.php:152
 msgid "checked"
 msgstr "marcado"
 
@@ -1688,7 +1688,7 @@ msgstr "Dirección"
 msgid "Notice: Ninja Forms shortcode used without specifying a form."
 msgstr "Aviso: shortcode de Ninja Forms utilizado sin especificar un formulario."
 
-#: includes/Display/Render.php:129 includes/Display/Render.php:388
+#: includes/Display/Render.php:135 includes/Display/Render.php:396
 msgid "No Fields Found."
 msgstr "No se encontraron campos."
 
@@ -1700,15 +1700,15 @@ msgstr "Debes estar conectado para previsualizar un formulario."
 msgid "Append a Ninja Form"
 msgstr "Adjunta un Ninja Form"
 
-#: includes/Admin/Menus/SystemStatus.php:178
+#: includes/Admin/Menus/SystemStatus.php:188
 msgid "smtp_port"
 msgstr "smtp_port"
 
-#: includes/Admin/Menus/SystemStatus.php:176
+#: includes/Admin/Menus/SystemStatus.php:186
 msgid "Host Name"
 msgstr "Nombre del host"
 
-#: includes/Admin/Menus/SystemStatus.php:175
+#: includes/Admin/Menus/SystemStatus.php:185
 msgid "Server IP Address"
 msgstr "Dirección IP del servidor"
 
@@ -1720,47 +1720,47 @@ msgstr "Guardar ajustes"
 msgid "Add-On Licenses"
 msgstr "Licencias de Add-On"
 
-#: includes/Admin/Menus/ImportExport.php:375
+#: includes/Admin/Menus/ImportExport.php:386
 msgid "File Upload Error"
 msgstr "Error al subir el archivo"
 
-#: includes/Admin/Menus/ImportExport.php:370
+#: includes/Admin/Menus/ImportExport.php:381
 msgid "Unknown upload error."
 msgstr "Error desconocido al subir."
 
-#: includes/Admin/Menus/ImportExport.php:367
+#: includes/Admin/Menus/ImportExport.php:378
 msgid "File upload stopped by extension."
 msgstr "El fichero no tiene una extensión permitida."
 
-#: includes/Admin/Menus/ImportExport.php:364
+#: includes/Admin/Menus/ImportExport.php:375
 msgid "Failed to write file to disk."
 msgstr "Fallo al escribir el fichero a disco."
 
-#: includes/Admin/Menus/ImportExport.php:361
+#: includes/Admin/Menus/ImportExport.php:372
 msgid "Missing a temporary folder."
 msgstr "Carpeta temporal perdida."
 
-#: includes/Admin/Menus/ImportExport.php:358
+#: includes/Admin/Menus/ImportExport.php:369
 msgid "No file was uploaded."
 msgstr "Ningún fichero fue subido."
 
-#: includes/Admin/Menus/ImportExport.php:355
+#: includes/Admin/Menus/ImportExport.php:366
 msgid "The uploaded file was only partially uploaded."
 msgstr "El fichero subido solo fue subido parcialmente."
 
-#: includes/Admin/Menus/ImportExport.php:352
+#: includes/Admin/Menus/ImportExport.php:363
 msgid "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form."
 msgstr "El archivo subido excede la directiva MAX_FILE_SIZE que fue especificada en el formulario HTML."
 
-#: includes/Admin/Menus/ImportExport.php:349
+#: includes/Admin/Menus/ImportExport.php:360
 msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini."
 msgstr "El archivo subido excede la directiva upload_max_filesize del php.ini."
 
-#: includes/Admin/Menus/ImportExport.php:141
+#: includes/Admin/Menus/ImportExport.php:152
 msgid "Export Forms"
 msgstr "Exportar formularios"
 
-#: includes/Admin/Menus/ImportExport.php:134
+#: includes/Admin/Menus/ImportExport.php:145
 msgid "Import Forms"
 msgstr "Importar formularios"
 
@@ -1865,15 +1865,15 @@ msgstr "Sistema"
 msgid "Query String"
 msgstr "Cadena de caracteres"
 
-#: includes/Admin/Menus/ImportExport.php:231
+#: includes/Admin/Menus/ImportExport.php:242
 msgid "Auto-Total Fields"
 msgstr "Campos de total automático"
 
-#: includes/Admin/Menus/ImportExport.php:228
+#: includes/Admin/Menus/ImportExport.php:239
 msgid "Operations and Fields (Advanced)"
 msgstr "Operaciones y campos (avanzado)"
 
-#: includes/Admin/Menus/ImportExport.php:225
+#: includes/Admin/Menus/ImportExport.php:236
 msgid "Equation (Advanced)"
 msgstr "Ecuación (avanzado)"
 
@@ -2040,116 +2040,116 @@ msgstr "Campos comunes"
 msgid "Saved Fields"
 msgstr "Campos guardados"
 
-#: includes/Config/FieldSettings.php:1137
+#: includes/Config/FieldSettings.php:1164
 msgid "Used for marking a field for processing."
 msgstr "Utilizados para marcar un campo para ser procesado."
 
-#: includes/Config/FieldSettings.php:1133
+#: includes/Config/FieldSettings.php:1160
 msgid "This is a user's state."
 msgstr "Esto es un estado del usuario."
 
-#: includes/Config/FieldSettings.php:1085
+#: includes/Config/FieldSettings.php:1112
 msgid "A case sensitive answer to help prevent spam submissions of your form."
 msgstr "Una respuesta que diferencia mayúsculas y minúsculas para ayudar a prevenir envíos de spam de tu formulario."
 
-#: includes/Config/FieldSettings.php:1081
+#: includes/Config/FieldSettings.php:1108
 msgid "Answer"
 msgstr "Respuesta"
 
-#: includes/Config/FieldSettings.php:1064
+#: includes/Config/FieldSettings.php:1091
 msgid "- Select a Product"
 msgstr "- Selecciona un producto"
 
-#: includes/Config/FieldSettings.php:1058 includes/Database/MockData.php:898
+#: includes/Config/FieldSettings.php:1085 includes/Database/MockData.php:898
 #: includes/Database/MockData.php:974 includes/Fields/Product.php:32
 msgid "Product"
 msgstr "Producto"
 
-#: includes/Config/FieldSettings.php:1049
+#: includes/Config/FieldSettings.php:1076
 msgid "Cost Type"
 msgstr "Tipo de coste"
 
-#: includes/Config/FieldSettings.php:1045
+#: includes/Config/FieldSettings.php:1072
 msgid "Cost Dropdown"
 msgstr "Menú desplegable de coste"
 
-#: includes/Config/FieldSettings.php:1041
+#: includes/Config/FieldSettings.php:1068
 msgid "Single Cost"
 msgstr "Coste individual"
 
-#: includes/Config/FieldSettings.php:1012
+#: includes/Config/FieldSettings.php:1039
 msgid "Cost Options"
 msgstr "Opciones de coste"
 
-#: includes/Config/FieldSettings.php:996
+#: includes/Config/FieldSettings.php:1023
 msgid "Cost"
 msgstr "Coste "
 
-#: includes/Config/FieldSettings.php:981
+#: includes/Config/FieldSettings.php:1008
 msgid "User Entry"
 msgstr "Entrada del usuario"
 
-#: includes/Config/FieldSettings.php:977
+#: includes/Config/FieldSettings.php:1004
 msgid "Multi Product - Choose One"
 msgstr "Multi producto - Elige uno"
 
-#: includes/Config/FieldSettings.php:973
+#: includes/Config/FieldSettings.php:1000
 msgid "Multi Product - Choose Many"
 msgstr "Multi producto - Elige muchos"
 
-#: includes/Config/FieldSettings.php:969
+#: includes/Config/FieldSettings.php:996
 msgid "Multi Product - Dropdown"
 msgstr "Multi producto - Desplegable"
 
-#: includes/Config/FieldSettings.php:965
+#: includes/Config/FieldSettings.php:992
 msgid "Single Product (default)"
 msgstr "Producto individual (por defecto)"
 
-#: includes/Config/FieldSettings.php:960
+#: includes/Config/FieldSettings.php:987
 msgid "Product Type"
 msgstr "Tipo de producto"
 
-#: includes/Config/FieldSettings.php:953
+#: includes/Config/FieldSettings.php:980
 msgid "Allows users to choose more than one of this product."
 msgstr "Permitir a los usuarios elegir más de uno de este producto."
 
-#: includes/Config/FieldSettings.php:936
+#: includes/Config/FieldSettings.php:963
 msgid "Price"
 msgstr "Precio"
 
-#: includes/Config/FieldSettings.php:923
+#: includes/Config/FieldSettings.php:950
 msgid "- Select a Variable"
 msgstr "- Selecciona una variable"
 
-#: includes/Config/FieldSettings.php:917
+#: includes/Config/FieldSettings.php:944
 msgid "Display This Calculation Variable"
 msgstr "Muestra esta variable de cálculo"
 
-#: includes/Config/FieldSettings.php:906
+#: includes/Config/FieldSettings.php:933
 msgid "This number will be used in calculations if the box is unchecked."
 msgstr "Este número se usará en los cálculos si la casilla no está marcada."
 
-#: includes/Config/FieldSettings.php:903
+#: includes/Config/FieldSettings.php:930
 msgid "Unchecked Calculation Value"
 msgstr "Valor de cálculo desmarcado"
 
-#: includes/Config/FieldSettings.php:897
+#: includes/Config/FieldSettings.php:924
 msgid "This number will be used in calculations if the box is checked."
 msgstr "Este número se usará en los cálculos si la casilla está marcada."
 
-#: includes/Config/FieldSettings.php:894
+#: includes/Config/FieldSettings.php:921
 msgid "Checked Calculation Value"
 msgstr "Valor de cálculo marcado"
 
-#: includes/Config/FieldSettings.php:879
+#: includes/Config/FieldSettings.php:906
 msgid "Processing Label"
 msgstr "Etiqueta de procesado"
 
-#: includes/Config/FieldSettings.php:843
+#: includes/Config/FieldSettings.php:870
 msgid "Allows rich text input."
 msgstr "Permitir introducir texto enriquecido."
 
-#: includes/Config/FieldSettings.php:728
+#: includes/Config/FieldSettings.php:755
 msgid ""
 "Use this as a reistration password field. If this box is check, both\n"
 "                        password and re-password textboxes will be output"
@@ -2157,56 +2157,56 @@ msgstr ""
 "Utiliza esto como un campo de registro de contraseña. Si esta casilla está marcada, tanto\n"
 "la caja de texto de contraseña como de volver a escribir la contraseña se mostrarán."
 
-#: includes/Config/FieldSettings.php:711
+#: includes/Config/FieldSettings.php:738
 msgid "Number of seconds for the countdown"
 msgstr "Número de segundos para la cuenta atrás"
 
-#: includes/Config/FieldSettings.php:611
+#: includes/Config/FieldSettings.php:638
 msgid "This column in the submissions table will sort by number."
 msgstr "Esta columna en los tabla de envíos se ordenará por número."
 
-#: includes/Config/FieldSettings.php:607
+#: includes/Config/FieldSettings.php:634
 msgid "Sort as Numeric"
 msgstr "Ordenar como numérica"
 
-#: includes/Config/FieldSettings.php:548
+#: includes/Config/FieldSettings.php:575
 msgid "Description"
 msgstr "Descripción"
 
-#: includes/Config/FieldSettings.php:523
+#: includes/Config/FieldSettings.php:550
 msgid "Shown to users as a hover."
 msgstr "Se muestra a los usuarios al pasar el cursor."
 
-#: includes/Config/FieldSettings.php:511
+#: includes/Config/FieldSettings.php:538
 msgid "Label used when viewing and exporting submissions."
 msgstr "Etiqueta utilizada al ver y exportar los envíos."
 
-#: includes/Config/FieldSettings.php:497
+#: includes/Config/FieldSettings.php:524
 msgid "Creates a unique key to identify and target your field for custom development."
 msgstr "Crea una clave única para identificar y apuntar a tu campo para desarrollos personalizados."
 
-#: includes/Config/FieldSettings.php:493
+#: includes/Config/FieldSettings.php:520
 msgid "Field Key"
 msgstr "Clave del campo"
 
-#: includes/Config/FieldSettings.php:479
+#: includes/Config/FieldSettings.php:506
 msgid "Number of seconds for timed submit."
 msgstr "Número de segundos para el envío cronometrado."
 
-#: includes/Config/FieldSettings.php:441
+#: includes/Config/FieldSettings.php:468
 msgid "Default To Current Date"
 msgstr "Por defecto la fecha actual"
 
-#: includes/Config/FieldSettings.php:370
+#: includes/Config/FieldSettings.php:397
 msgid "Adds an extra class to your field element."
 msgstr "Añade una clase extra a tu elemento campo."
 
-#: includes/Config/FieldSettings.php:365
+#: includes/Config/FieldSettings.php:392
 #: includes/Config/FormDisplaySettings.php:119
 msgid "Element"
 msgstr "Elemento"
 
-#: includes/Config/FieldSettings.php:360
+#: includes/Config/FieldSettings.php:387
 msgid "Adds an extra class to your field wrapper."
 msgstr "Añade una clase extra al contenedor del campo."
 
@@ -2214,36 +2214,36 @@ msgstr "Añade una clase extra al contenedor del campo."
 msgid "Wrapper"
 msgstr "Envoltura"
 
-#: includes/Config/FieldSettings.php:348
+#: includes/Config/FieldSettings.php:375
 #: includes/Config/FormDisplaySettings.php:103
 msgid "Custom Class Names"
 msgstr "Nombres de clase personalizada"
 
-#: includes/Config/FieldSettings.php:319
+#: includes/Config/FieldSettings.php:346
 msgid "Enter text you would like displayed in the field before a user enters any data."
 msgstr "Introduce el texto que te gustaría mostrar en el campo antes de que el usuario introduzca cualquier dato."
 
-#: includes/Config/FieldSettings.php:290 includes/Config/FieldSettings.php:292
+#: includes/Config/FieldSettings.php:317 includes/Config/FieldSettings.php:319
 msgid "Character(s) left"
 msgstr "caracter(es) quedan"
 
-#: includes/Config/FieldSettings.php:289
+#: includes/Config/FieldSettings.php:316
 msgid "Text to Appear After Counter"
 msgstr "Texto que aparece después del contador"
 
-#: includes/Config/FieldSettings.php:279
+#: includes/Config/FieldSettings.php:306
 msgid "Word(s)"
 msgstr "Palabra(s)"
 
-#: includes/Config/FieldSettings.php:275
+#: includes/Config/FieldSettings.php:302
 msgid "Character(s)"
 msgstr "Caracter(es)"
 
-#: includes/Config/FieldSettings.php:259
+#: includes/Config/FieldSettings.php:286
 msgid "Limit Input to this Number"
 msgstr "Limitar la introducción a este número"
 
-#: includes/Config/FieldSettings.php:244
+#: includes/Config/FieldSettings.php:271
 msgid ""
 "<ul>\n"
 "                            <li>a - Represents an alpha character (A-Z,a-z) - Only allows letters to be entered. </li>\n"
@@ -2259,27 +2259,27 @@ msgstr ""
 "                            números como letras.</li>\n"
 "                        </ul>"
 
-#: includes/Config/FieldSettings.php:235
+#: includes/Config/FieldSettings.php:262
 msgid "Custom Mask"
 msgstr "Máscara personalizada"
 
-#: includes/Config/FieldSettings.php:210
+#: includes/Config/FieldSettings.php:237
 msgid "US Phone"
 msgstr "Teléfono de EEUU"
 
-#: includes/Config/FieldSettings.php:206
+#: includes/Config/FieldSettings.php:233
 msgid "none"
 msgstr "nada"
 
-#: includes/Config/FieldSettings.php:203
+#: includes/Config/FieldSettings.php:230
 msgid "Restricts the kind of input your users can put into this field."
 msgstr "Restringe el tipo de datos que tus usuarios pueden poner en este campo."
 
-#: includes/Config/FieldSettings.php:173
+#: includes/Config/FieldSettings.php:200
 msgid "Calc Value"
 msgstr "Valor de cálculo"
 
-#: includes/Config/FieldSettings.php:153
+#: includes/Config/FieldSettings.php:180
 msgid "Options"
 msgstr "Opciones"
 
@@ -2311,7 +2311,7 @@ msgstr "Campo obligatorio"
 msgid "Select the position of your label relative to the field element itself."
 msgstr "Selecciona la posición de tu etiqueta en relación al elemento del campo."
 
-#: includes/Config/FieldSettings.php:58 includes/Config/FieldSettings.php:985
+#: includes/Config/FieldSettings.php:58 includes/Config/FieldSettings.php:1012
 #: includes/Config/FormDisplaySettings.php:89
 #: includes/Database/MockData.php:376 includes/Database/MockData.php:633
 #: includes/Fields/Hidden.php:38
@@ -2402,7 +2402,7 @@ msgstr "Mapeado de la lista de campos"
 msgid "An unexpected error occurred."
 msgstr "Ocurrió un error inesperado."
 
-#: includes/Admin/Menus/Forms.php:542 includes/MergeTags/Fields.php:14
+#: includes/Admin/Menus/Forms.php:564 includes/MergeTags/Fields.php:14
 msgid "Fields"
 msgstr "Campos"
 
@@ -2418,40 +2418,40 @@ msgstr "Una actualización importante está llegando a Ninja Forms. %sConoce má
 msgid "THREE is coming!"
 msgstr "¡Ya llega THREE!"
 
-#: deprecated/classes/subs-cpt.php:656
+#: deprecated/classes/subs-cpt.php:659
 msgid "%1$s draft updated. <a href=\"%2$s\" target=\"_blank\">Preview %3$s</a>"
 msgstr "%1$s borrador actualizado. <a href=\"%2$s\" target=\"_blank\">Vista previa %3$s</a>"
 
-#: deprecated/classes/subs-cpt.php:655
+#: deprecated/classes/subs-cpt.php:658
 msgid "%1$s scheduled for: <strong>%2$s</strong>. <a href=\"%3$s\" target=\"_blank\">Preview %4$s</a>"
 msgstr "%1$s programado para: <strong>%2$s</strong>. <a href=\"%3$s\" target=\"_blank\">Vista previa %4$s</a>"
 
-#: deprecated/classes/subs-cpt.php:654
+#: deprecated/classes/subs-cpt.php:657
 msgid "%1$s submitted. <a href=\"%2$s\" target=\"_blank\">Preview %3$s</a>"
 msgstr "%1$s enviado. <a href=\"%2$s\" target=\"_blank\">Vista previa %3$s</a>"
 
-#: deprecated/classes/subs-cpt.php:653
+#: deprecated/classes/subs-cpt.php:656
 msgid "%s saved."
 msgstr "%s guardado."
 
-#: deprecated/classes/subs-cpt.php:652
+#: deprecated/classes/subs-cpt.php:655
 msgid "%s published."
 msgstr "%s publicado."
 
 #. translators: %s: date and time of the revision
-#: deprecated/classes/subs-cpt.php:651
+#: deprecated/classes/subs-cpt.php:654
 msgid "%1$s restored to revision from %2$s."
 msgstr "%1$s restaurado para revisión desde %2$s."
 
-#: deprecated/classes/subs-cpt.php:648
+#: deprecated/classes/subs-cpt.php:651
 msgid "Custom field deleted."
 msgstr "Campo personalizado borrado."
 
-#: deprecated/classes/subs-cpt.php:647
+#: deprecated/classes/subs-cpt.php:650
 msgid "Custom field updated."
 msgstr "Campo personalizado actualizado."
 
-#: deprecated/classes/subs-cpt.php:646 deprecated/classes/subs-cpt.php:649
+#: deprecated/classes/subs-cpt.php:649 deprecated/classes/subs-cpt.php:652
 msgid "%s updated."
 msgstr "%s actualizado."
 
@@ -2471,7 +2471,7 @@ msgstr "Ninja Forms es un constructor de formularios web con una facilidad de us
 msgid "http://ninjaforms.com/"
 msgstr "http://ninjaforms.com/"
 
-#. #-#-#-#-#  ninja-forms-code.pot (Ninja Forms 3.2.3)  #-#-#-#-#
+#. #-#-#-#-#  ninja-forms-code.pot (Ninja Forms 3.2.8)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: includes/Admin/Menus/Forms.php:37 includes/Config/i18nBuilder.php:5
 #: includes/Config/i18nFrontEnd.php:9
@@ -2545,7 +2545,7 @@ msgstr "%n se utilizará para significar el número de segundos"
 
 #: deprecated/includes/fields/timed-submit.php:18
 #: deprecated/includes/fields/timed-submit.php:69
-#: includes/Config/FieldSettings.php:698
+#: includes/Config/FieldSettings.php:725
 msgid "Please wait %n seconds"
 msgstr "Por favor, espera %n segundos"
 
@@ -2570,7 +2570,7 @@ msgid "Custom Mask Definition"
 msgstr "Definición de Máscara Personalizada"
 
 #: deprecated/includes/fields/textbox.php:176
-#: includes/Config/FieldSettings.php:218
+#: includes/Config/FieldSettings.php:245
 #: includes/Config/FormDisplaySettings.php:232
 #: includes/Config/PluginSettingsGeneral.php:41
 msgid "Currency"
@@ -2585,7 +2585,7 @@ msgid "Datepicker"
 msgstr "Selector de fecha"
 
 #: deprecated/includes/fields/textbox.php:56
-#: includes/Config/FieldSettings.php:769
+#: includes/Config/FieldSettings.php:796
 msgid "Disable Input"
 msgstr "Desactivar Entrada"
 
@@ -2594,17 +2594,17 @@ msgid "Validate as an email address? (Field must be required)"
 msgstr "¿Validar como una dirección de correo electrónico? (El campo debe ser necesario)"
 
 #: deprecated/includes/fields/textarea.php:28
-#: includes/Config/FieldSettings.php:861
+#: includes/Config/FieldSettings.php:888
 msgid "Disable Rich Text Editor on Mobile"
 msgstr "Desactivar el editor de texto enriquecido en el móvil"
 
 #: deprecated/includes/fields/textarea.php:23
-#: includes/Config/FieldSettings.php:849
+#: includes/Config/FieldSettings.php:876
 msgid "Show Media Upload Button"
 msgstr "Mostrar el botón de subir media"
 
 #: deprecated/includes/fields/textarea.php:18
-#: includes/Config/FieldSettings.php:839
+#: includes/Config/FieldSettings.php:866
 msgid "Show Rich Text Editor"
 msgstr "Mostrar el editor de texto enriquecido"
 
@@ -2675,7 +2675,7 @@ msgid "reCAPTCHA"
 msgstr "reCAPTCHA"
 
 #: deprecated/includes/fields/rating.php:13
-#: includes/Config/FieldSettings.php:744
+#: includes/Config/FieldSettings.php:771
 msgid "Number of stars"
 msgstr "Número de estrellas "
 
@@ -2765,7 +2765,7 @@ msgid "To use this feature, you can paste your CSV into the textarea above."
 msgstr "Para utilizar esta función, puedes pegar tu CSV en el área de texto de arriba."
 
 #: deprecated/includes/fields/list.php:175
-#: includes/Config/FieldSettings.php:153
+#: includes/Config/FieldSettings.php:180
 #: includes/Templates/admin-menu-new-form.html.php:440
 msgid "Import"
 msgstr "Importar"
@@ -2779,7 +2779,7 @@ msgid "Import List Items"
 msgstr "Importar Lista de Artículos"
 
 #: deprecated/includes/fields/list.php:145
-#: includes/Config/FieldSettings.php:624
+#: includes/Config/FieldSettings.php:651
 msgid "Multi-Select Box Size"
 msgstr "Tamaño de la Casilla de Multi-Seleccionar"
 
@@ -3032,12 +3032,12 @@ msgid "South Sudan"
 msgstr "Sudán del Sur"
 
 #: deprecated/includes/fields/country.php:283
-#: includes/Config/FieldSettings.php:796
+#: includes/Config/FieldSettings.php:823
 msgid "Custom first option"
 msgstr "Primera opción personalizada "
 
 #: deprecated/includes/fields/country.php:277
-#: includes/Config/FieldSettings.php:783
+#: includes/Config/FieldSettings.php:810
 msgid "Use a custom first option"
 msgstr "Utiliza una primera opción personalizada "
 
@@ -4514,12 +4514,14 @@ msgid "Show This"
 msgstr "Mostrar esto"
 
 #: deprecated/includes/fields/checkbox.php:14
-#: includes/Config/FieldSettings.php:136
+#: includes/Config/FieldSettings.php:136 includes/Config/FieldSettings.php:160
+#: includes/Fields/Checkbox.php:85
 msgid "Checked"
 msgstr "Marcado"
 
 #: deprecated/includes/fields/checkbox.php:10
-#: includes/Config/FieldSettings.php:132
+#: includes/Config/FieldSettings.php:132 includes/Config/FieldSettings.php:167
+#: includes/Fields/Checkbox.php:87
 msgid "Unchecked"
 msgstr "Desmarcado"
 
@@ -4549,7 +4551,7 @@ msgstr "Clase CSS personalizada"
 #: deprecated/includes/fields/number.php:83
 #: deprecated/includes/fields/textarea.php:11
 #: deprecated/includes/fields/textbox.php:122
-#: includes/Config/FieldSettings.php:129 includes/Config/FieldSettings.php:330
+#: includes/Config/FieldSettings.php:129 includes/Config/FieldSettings.php:357
 #: includes/Fields/ListCountry.php:30
 msgid "Default Value"
 msgstr "Valor por defecto"
@@ -4616,9 +4618,9 @@ msgstr "¿Desactivar la entrada?"
 #: deprecated/includes/fields/list.php:585
 #: deprecated/includes/fields/timed-submit.php:9
 #: deprecated/includes/fields/timed-submit.php:17
-#: includes/Config/FieldSettings.php:21 includes/Config/FieldSettings.php:164
-#: includes/Config/FieldSettings.php:680 includes/Config/FieldSettings.php:696
-#: includes/Config/FieldSettings.php:1022
+#: includes/Config/FieldSettings.php:21 includes/Config/FieldSettings.php:191
+#: includes/Config/FieldSettings.php:707 includes/Config/FieldSettings.php:723
+#: includes/Config/FieldSettings.php:1049
 msgid "Label"
 msgstr "Etiqueta"
 
@@ -5091,7 +5093,7 @@ msgstr "Ninja Forms- Está Procesando"
 
 #: deprecated/includes/admin/step-processing.php:11
 #: deprecated/includes/admin/upgrades/upgrade-handler-page.html.php:29
-#: deprecated/ninja-forms.php:683 includes/Config/FieldSettings.php:882
+#: deprecated/ninja-forms.php:683 includes/Config/FieldSettings.php:909
 #: lib/StepProcessing/menu.php:11
 msgid "Processing"
 msgstr "Procesando"
@@ -5113,7 +5115,7 @@ msgstr "Guardando..."
 msgid "Saved"
 msgstr "Guardado"
 
-#: deprecated/includes/admin/scripts.php:75 includes/Admin/Menus/Forms.php:227
+#: deprecated/includes/admin/scripts.php:75 includes/Admin/Menus/Forms.php:229
 msgid "Edit Form"
 msgstr "Editar formulario"
 
@@ -5138,166 +5140,166 @@ msgstr "¿Qué te gustaría llamar a este favorito? "
 msgid "Append A Ninja Form"
 msgstr "Anexar Un Ninja Form"
 
-#: deprecated/includes/admin/pages/system-status-html.php:210
-#: includes/Admin/Menus/SystemStatus.php:110
+#: deprecated/includes/admin/pages/system-status-html.php:218
+#: includes/Admin/Menus/SystemStatus.php:124
 msgid "version"
 msgstr "versión"
 
-#: deprecated/includes/admin/pages/system-status-html.php:210
-#: includes/Admin/Menus/SystemStatus.php:110
+#: deprecated/includes/admin/pages/system-status-html.php:218
+#: includes/Admin/Menus/SystemStatus.php:124
 msgid "by"
 msgstr "por"
 
-#: deprecated/includes/admin/pages/system-status-html.php:207
-#: includes/Admin/Menus/SystemStatus.php:107
+#: deprecated/includes/admin/pages/system-status-html.php:215
+#: includes/Admin/Menus/SystemStatus.php:121
 msgid "Visit plugin homepage"
 msgstr "Visitar la página web del plugin"
 
-#: deprecated/includes/admin/pages/system-status-html.php:187
+#: deprecated/includes/admin/pages/system-status-html.php:195
 msgid "Installed Plugins"
 msgstr "Plugins instalados"
 
-#: deprecated/includes/admin/pages/system-status-html.php:182
+#: deprecated/includes/admin/pages/system-status-html.php:190
 #: includes/Templates/admin-menu-system-status.html.php:48
 msgid "Plugins"
 msgstr "Plugins "
 
-#: deprecated/includes/admin/pages/system-status-html.php:175
+#: deprecated/includes/admin/pages/system-status-html.php:183
 msgid "wp_remote_post() failed. PayPal IPN may not work with your server."
 msgstr "wp_remote_post() ha fallado. PayPal IPN no puede funcionar con su servidor."
 
-#: deprecated/includes/admin/pages/system-status-html.php:172
+#: deprecated/includes/admin/pages/system-status-html.php:180
 msgid "wp_remote_post() failed. PayPal IPN won't work with your server. Contact your hosting provider. Error:"
 msgstr "wp_remote_post() ha fallado. PayPal IPN no funcionará con el servidor. Comuníquese con su proveedor de hosting. Error:"
 
-#: deprecated/includes/admin/pages/system-status-html.php:169
+#: deprecated/includes/admin/pages/system-status-html.php:177
 msgid "wp_remote_post() was successful - PayPal IPN is working."
 msgstr "wp_remote_post() fue un éxito - PayPal IPN está funcionando."
 
-#: deprecated/includes/admin/pages/system-status-html.php:158
+#: deprecated/includes/admin/pages/system-status-html.php:166
 msgid "WP Remote Post"
 msgstr "Puesto Remoto de WP"
 
-#: deprecated/includes/admin/pages/system-status-html.php:153
+#: deprecated/includes/admin/pages/system-status-html.php:161
 msgid "Your server does not have the %sSOAP Client%s class enabled - some gateway plugins which use SOAP may not work as expected."
 msgstr "Su servidor no tiene la clase %sSOAP Client%s habilitado - algunos plugins de entrada que utilizan SOAP no van a funcionar como se espera."
 
-#: deprecated/includes/admin/pages/system-status-html.php:150
+#: deprecated/includes/admin/pages/system-status-html.php:158
 msgid "Your server has the SOAP Client class enabled."
 msgstr "El servidor tiene habilitado la clase de Cliente SOAP."
 
-#: deprecated/includes/admin/pages/system-status-html.php:148
+#: deprecated/includes/admin/pages/system-status-html.php:156
 msgid "SOAP Client"
 msgstr "Cliente SOAP"
 
-#: deprecated/includes/admin/pages/system-status-html.php:143
+#: deprecated/includes/admin/pages/system-status-html.php:151
 msgid "Your server does not have fsockopen or cURL enabled - PayPal IPN and other scripts which communicate with other servers will not work. Contact your hosting provider."
 msgstr "Su servidor no tiene fsockopen o cURL habilitado - PayPal IPN y otras secuencias de comandos que se comunican con otros servidores no funcionarán. Comuníquese con su proveedor de hosting."
 
-#: deprecated/includes/admin/pages/system-status-html.php:139
+#: deprecated/includes/admin/pages/system-status-html.php:147
 msgid "Your server has cURL enabled, fsockopen is disabled."
 msgstr "Su servidor tiene permitido cURL , fsockopen está deshabilitado."
 
-#: deprecated/includes/admin/pages/system-status-html.php:137
+#: deprecated/includes/admin/pages/system-status-html.php:145
 msgid "Your server has fsockopen enabled, cURL is disabled."
 msgstr "Su servidor tiene fsockopen y cURL discapacitados."
 
-#: deprecated/includes/admin/pages/system-status-html.php:135
+#: deprecated/includes/admin/pages/system-status-html.php:143
 msgid "Your server has fsockopen and cURL enabled."
 msgstr "Su servidor tiene fsockopen y cURL habilitados."
 
-#: deprecated/includes/admin/pages/system-status-html.php:124
+#: deprecated/includes/admin/pages/system-status-html.php:132
 msgid "Default timezone is %s"
 msgstr "Por defecto la zona horaria es %s"
 
-#: deprecated/includes/admin/pages/system-status-html.php:122
+#: deprecated/includes/admin/pages/system-status-html.php:130
 msgid "Default timezone is %s - it should be UTC"
 msgstr "Por defecto la zona horaria es %s - debe ser UTC"
 
-#: deprecated/includes/admin/pages/system-status-html.php:118
-#: includes/Admin/Menus/SystemStatus.php:179
+#: deprecated/includes/admin/pages/system-status-html.php:126
+#: includes/Admin/Menus/SystemStatus.php:189
 msgid "Default Timezone"
 msgstr "Zona Horaria por Defecto"
 
-#: deprecated/includes/admin/pages/system-status-html.php:109
-#: includes/Admin/Menus/SystemStatus.php:177
+#: deprecated/includes/admin/pages/system-status-html.php:117
+#: includes/Admin/Menus/SystemStatus.php:187
 msgid "SMTP"
 msgstr "SMTP"
 
-#: deprecated/includes/admin/pages/system-status-html.php:105
-#: includes/Admin/Menus/SystemStatus.php:174
+#: deprecated/includes/admin/pages/system-status-html.php:113
+#: includes/Admin/Menus/SystemStatus.php:184
 msgid "SUHOSIN Installed"
 msgstr "SUHOSIN Instalado"
 
-#: deprecated/includes/admin/pages/system-status-html.php:101
-#: includes/Admin/Menus/SystemStatus.php:173
+#: deprecated/includes/admin/pages/system-status-html.php:105
+#: includes/Admin/Menus/SystemStatus.php:183
 msgid "PHP Max Input Vars"
 msgstr "PHP Entrada Máxima Vars"
 
-#: deprecated/includes/admin/pages/system-status-html.php:97
-#: includes/Admin/Menus/SystemStatus.php:172
+#: deprecated/includes/admin/pages/system-status-html.php:101
+#: includes/Admin/Menus/SystemStatus.php:182
 msgid "PHP Time Limit"
 msgstr "PHP Límite de Tiempo"
 
 #: deprecated/includes/admin/pages/system-status-html.php:93
-#: includes/Admin/Menus/SystemStatus.php:171
+#: includes/Admin/Menus/SystemStatus.php:181
 msgid "Max Input Nesting Level"
 msgstr "Nivel Máximo de Entrada de la Anidación"
 
 #: deprecated/includes/admin/pages/system-status-html.php:89
-#: includes/Admin/Menus/SystemStatus.php:170
+#: includes/Admin/Menus/SystemStatus.php:180
 msgid "PHP Post Max Size"
 msgstr "Tamaño Máximo de Puesto PHP"
 
 #: deprecated/includes/admin/pages/system-status-html.php:84
-#: includes/Admin/Menus/SystemStatus.php:169
+#: includes/Admin/Menus/SystemStatus.php:179
 msgid "WP Max Upload Size"
 msgstr "Tamaño máximo de subida de WP"
 
 #: deprecated/includes/admin/pages/system-status-html.php:81
 #: includes/Admin/Menus/SystemStatus.php:67
-#: includes/Config/FieldSettings.php:387
+#: includes/Config/FieldSettings.php:414
 msgid "Default"
 msgstr "Por defecto"
 
 #: deprecated/includes/admin/pages/system-status-html.php:80
-#: includes/Admin/Menus/SystemStatus.php:168
+#: includes/Admin/Menus/SystemStatus.php:178
 msgid "WP Language"
 msgstr "Idioma de WP"
 
 #: deprecated/includes/admin/pages/system-status-html.php:76
-#: includes/Admin/Menus/SystemStatus.php:167
+#: includes/Admin/Menus/SystemStatus.php:177
 msgid "WP Debug Mode"
 msgstr "Modo de depuración de WP"
 
 #: deprecated/includes/admin/pages/system-status-html.php:68
-#: includes/Admin/Menus/SystemStatus.php:166
+#: includes/Admin/Menus/SystemStatus.php:176
 msgid "WP Memory Limit"
 msgstr "Límite de memoria de WP"
 
 #: deprecated/includes/admin/pages/system-status-html.php:59
-#: includes/Admin/Menus/SystemStatus.php:164
+#: includes/Admin/Menus/SystemStatus.php:174
 msgid "PHP Locale"
 msgstr "Configuración regional PHP"
 
 #: deprecated/includes/admin/pages/system-status-html.php:49
-#: includes/Admin/Menus/SystemStatus.php:163
+#: includes/Admin/Menus/SystemStatus.php:173
 msgid "MySQL Version"
 msgstr "Versión MySQL"
 
 #: deprecated/includes/admin/pages/system-status-html.php:45
-#: includes/Admin/Menus/SystemStatus.php:161
+#: includes/Admin/Menus/SystemStatus.php:171
 msgid "PHP Version"
 msgstr "Versión PHP"
 
 #: deprecated/includes/admin/pages/system-status-html.php:41
-#: includes/Admin/Menus/SystemStatus.php:159
+#: includes/Admin/Menus/SystemStatus.php:170
 msgid "Web Server Info"
 msgstr "Información del servidor web"
 
 #: deprecated/includes/admin/pages/system-status-html.php:38
 #: deprecated/includes/admin/pages/system-status-html.php:77
-#: deprecated/includes/admin/pages/system-status-html.php:106
+#: deprecated/includes/admin/pages/system-status-html.php:114
 #: includes/Admin/Menus/SystemStatus.php:43
 #: includes/Admin/Menus/SystemStatus.php:60
 #: includes/Admin/Menus/SystemStatus.php:80
@@ -5306,7 +5308,7 @@ msgstr "No"
 
 #: deprecated/includes/admin/pages/system-status-html.php:38
 #: deprecated/includes/admin/pages/system-status-html.php:77
-#: deprecated/includes/admin/pages/system-status-html.php:106
+#: deprecated/includes/admin/pages/system-status-html.php:114
 #: includes/Admin/Menus/SystemStatus.php:41
 #: includes/Admin/Menus/SystemStatus.php:58
 #: includes/Admin/Menus/SystemStatus.php:78
@@ -5314,29 +5316,29 @@ msgid "Yes"
 msgstr "Sí"
 
 #: deprecated/includes/admin/pages/system-status-html.php:37
-#: includes/Admin/Menus/SystemStatus.php:158
+#: includes/Admin/Menus/SystemStatus.php:169
 msgid "WP Multisite Enabled"
 msgstr "WP Multisitio activado"
 
 #: deprecated/includes/admin/pages/system-status-html.php:33
-#: includes/Admin/Menus/SystemStatus.php:157
+#: includes/Admin/Menus/SystemStatus.php:168
 msgid "WP Version"
 msgstr "Versión de WP"
 
 #: deprecated/includes/admin/pages/system-status-html.php:25
-#: includes/Admin/Menus/SystemStatus.php:156
+#: includes/Admin/Menus/SystemStatus.php:167
 msgid "Ninja Forms Version"
 msgstr "Versión de Ninja Forms"
 
 #: deprecated/includes/admin/pages/system-status-html.php:21
-#: includes/Admin/Menus/SystemStatus.php:155
+#: includes/Admin/Menus/SystemStatus.php:166
 #: includes/Config/MergeTagsDeprecated.php:157
 #: includes/Config/MergeTagsWP.php:196
 msgid "Site URL"
 msgstr "URL de sitio"
 
 #: deprecated/includes/admin/pages/system-status-html.php:17
-#: includes/Admin/Menus/SystemStatus.php:154
+#: includes/Admin/Menus/SystemStatus.php:165
 msgid "Home URL"
 msgstr "URL de inicio"
 
@@ -5548,8 +5550,8 @@ msgstr "Por favor, seleccione un formulario."
 
 #: deprecated/includes/admin/pages/ninja-forms-impexp/tabs/impexp-forms/impexp-forms.php:75
 #: deprecated/includes/admin/pages/ninja-forms-impexp/tabs/impexp-forms/impexp-forms.php:156
-#: includes/Templates/admin-metabox-import-export-forms-export.html.php:21
-#: includes/Templates/admin-metabox-import-export-forms-export.html.php:24
+#: includes/Templates/admin-metabox-import-export-forms-export.html.php:37
+#: includes/Templates/admin-metabox-import-export-forms-export.html.php:40
 msgid "Export Form"
 msgstr "Exportar Formulario"
 
@@ -5559,8 +5561,8 @@ msgstr "Exportar un formulario"
 
 #: deprecated/includes/admin/pages/ninja-forms-impexp/tabs/impexp-forms/impexp-forms.php:35
 #: deprecated/includes/admin/pages/ninja-forms-impexp/tabs/impexp-forms/impexp-forms.php:162
-#: includes/Templates/admin-metabox-import-export-forms-import.html.php:17
-#: includes/Templates/admin-metabox-import-export-forms-import.html.php:20
+#: includes/Templates/admin-metabox-import-export-forms-import.html.php:32
+#: includes/Templates/admin-metabox-import-export-forms-import.html.php:35
 msgid "Import Form"
 msgstr "Importar Formulario"
 
@@ -5588,7 +5590,7 @@ msgid "Export Fields"
 msgstr "Exportar Campos"
 
 #: deprecated/includes/admin/pages/ninja-forms-impexp/tabs/impexp-fields/impexp-fields.php:63
-#: includes/Admin/Menus/ImportExport.php:158
+#: includes/Admin/Menus/ImportExport.php:169
 msgid "Export Favorite Fields"
 msgstr "Exportar Campos Favoritos"
 
@@ -5610,7 +5612,7 @@ msgid "Select a file"
 msgstr "Seleccione un archivo"
 
 #: deprecated/includes/admin/pages/ninja-forms-impexp/tabs/impexp-fields/impexp-fields.php:23
-#: includes/Admin/Menus/ImportExport.php:151
+#: includes/Admin/Menus/ImportExport.php:162
 msgid "Import Favorite Fields"
 msgstr "Importar Campos Favoritos"
 
@@ -5863,7 +5865,7 @@ msgstr "Elementos de Disposición"
 
 #: deprecated/includes/admin/pages/ninja-forms/tabs/field-settings/sidebars/fav-fields.php:6
 #: deprecated/includes/admin/pages/ninja-forms-impexp/tabs/impexp-fields/impexp-fields.php:7
-#: includes/Admin/Menus/ImportExport.php:109
+#: includes/Admin/Menus/ImportExport.php:120
 #: includes/Templates/admin-metabox-import-export-favorite-fields-export.html.php:9
 msgid "Favorite Fields"
 msgstr "Los Campos Favoritos"
@@ -5914,7 +5916,7 @@ msgstr "Cualquier tipo que usted deposita en la caja \"máscara personalizada\" 
 
 #: deprecated/includes/admin/pages/ninja-forms/tabs/field-settings/help.php:7
 #: deprecated/includes/fields/textbox.php:170
-#: includes/Config/FieldSettings.php:200
+#: includes/Config/FieldSettings.php:227
 msgid "Input Mask"
 msgstr "Máscara de Entrada"
 
@@ -5970,7 +5972,7 @@ msgstr "Campo de Grupo de Información del Usuario"
 #: deprecated/includes/fields/number.php:75
 #: deprecated/includes/fields/textbox.php:135
 #: deprecated/includes/fields/textbox.php:177
-#: includes/Config/FieldSettings.php:222
+#: includes/Config/FieldSettings.php:249
 msgid "Custom"
 msgstr "Personalización"
 
@@ -5990,7 +5992,7 @@ msgid "This is the label used when viewing/editing/exporting submissions."
 msgstr "Esta es la etiqueta que se utiliza durante la visualización/ la edición/ la exportación de envíos."
 
 #: deprecated/includes/admin/edit-field/sub-settings.php:68
-#: includes/Config/FieldSettings.php:507
+#: includes/Config/FieldSettings.php:534
 msgid "Admin Label"
 msgstr "Etiqueta de Administración"
 
@@ -6011,7 +6013,7 @@ msgid "Required"
 msgstr "Necesario"
 
 #: deprecated/includes/admin/edit-field/placeholder.php:19
-#: includes/Config/FieldSettings.php:315
+#: includes/Config/FieldSettings.php:342
 msgid "Placeholder"
 msgstr "Texto de sustitución"
 
@@ -6122,7 +6124,7 @@ msgstr "Si deja la casilla vacía, se utilizará ningún límite"
 #: deprecated/includes/admin/edit-field/help.php:37
 #: deprecated/includes/display/fields/help.php:26
 #: deprecated/includes/fields/calc.php:283
-#: includes/Config/FieldSettings.php:521
+#: includes/Config/FieldSettings.php:548
 msgid "Help Text"
 msgstr "Texto de ayuda"
 
@@ -6205,7 +6207,7 @@ msgid "%sChecked%s Calculation Value"
 msgstr "%sChecked%s Valor de Cálculo"
 
 #: deprecated/includes/admin/edit-field/autocomplete-off.php:16
-#: includes/Config/FieldSettings.php:757
+#: includes/Config/FieldSettings.php:784
 msgid "Disable Browser Autocomplete"
 msgstr "Desactivar Autocompletador del Navegador"
 
@@ -6246,7 +6248,7 @@ msgstr "Estado del sistema"
 #: deprecated/includes/admin/pages/ninja-forms/tabs/form-settings/form-settings.php:7
 #: deprecated/includes/admin/welcome.php:335
 #: includes/Admin/Menus/Settings.php:66 includes/Admin/Menus/Settings.php:77
-#: includes/Config/FieldSettings.php:816
+#: includes/Config/FieldSettings.php:843
 #: includes/Templates/admin-menu-settings.html.php:3
 #: includes/Templates/ui-nf-header.html.php:7
 #: includes/Templates/ui-nf-menu-drawer.html.php:8
@@ -6307,92 +6309,92 @@ msgstr "No tienes permiso para instalar actualizaciones del plugin"
 msgid "Date Submitted"
 msgstr "Fecha de envío"
 
-#: deprecated/classes/subs-cpt.php:1035 deprecated/classes/subs-cpt.php:1036
+#: deprecated/classes/subs-cpt.php:1038 deprecated/classes/subs-cpt.php:1039
 #: deprecated/upgrade/class-submenu.php:56
 #: includes/Templates/admin-metabox-sub-info.html.php:34
 msgid "Update"
 msgstr "Actualización"
 
-#: deprecated/classes/subs-cpt.php:1021
+#: deprecated/classes/subs-cpt.php:1024
 msgid "Submitted By"
 msgstr "Enviado por"
 
-#: deprecated/classes/subs-cpt.php:1013
+#: deprecated/classes/subs-cpt.php:1016
 msgid "Modified on"
 msgstr "Modificado el"
 
-#: deprecated/classes/subs-cpt.php:1007
+#: deprecated/classes/subs-cpt.php:1010
 msgid "Submitted on"
 msgstr "Enviado el"
 
-#: deprecated/classes/subs-cpt.php:1002
+#: deprecated/classes/subs-cpt.php:1005
 #: deprecated/includes/admin/pages/ninja-forms/tabs/form-list/form-list.php:119
 #: includes/Admin/AllFormsTable.php:20
-#: includes/Admin/Menus/ImportExport.php:108 includes/MergeTags/Form.php:15
+#: includes/Admin/Menus/ImportExport.php:119 includes/MergeTags/Form.php:17
 msgid "Form"
 msgstr "Formulario"
 
-#: deprecated/classes/subs-cpt.php:997
+#: deprecated/classes/subs-cpt.php:1000
 msgid "Status"
 msgstr "Estado"
 
-#: deprecated/classes/subs-cpt.php:898 deprecated/includes/fields/list.php:103
+#: deprecated/classes/subs-cpt.php:901 deprecated/includes/fields/list.php:103
 #: deprecated/includes/fields/list.php:588
-#: includes/Config/FieldSettings.php:169 includes/Config/FieldSettings.php:1027
+#: includes/Config/FieldSettings.php:196 includes/Config/FieldSettings.php:1054
 #: includes/Templates/admin-metabox-sub-fields.html.php:8
 msgid "Value"
 msgstr "Valor"
 
-#: deprecated/classes/subs-cpt.php:897
+#: deprecated/classes/subs-cpt.php:900
 #: includes/Config/ActionCollectPaymentSettings.php:42
 #: includes/Templates/admin-menu-forms.html.php:7
 #: includes/Templates/admin-metabox-sub-fields.html.php:7
 msgid "Field"
 msgstr "Campo"
 
-#: deprecated/classes/subs-cpt.php:867
+#: deprecated/classes/subs-cpt.php:870
 msgid "Submission Stats"
 msgstr "Estadísticas de envíos"
 
-#: deprecated/classes/subs-cpt.php:865 includes/Admin/CPT/Submission.php:238
+#: deprecated/classes/subs-cpt.php:868 includes/Admin/CPT/Submission.php:238
 msgid "User Submitted Values"
 msgstr "Valores enviados por el usuario"
 
-#: deprecated/classes/subs-cpt.php:807
+#: deprecated/classes/subs-cpt.php:810
 msgid "Back to list"
 msgstr "Regresar a la lista"
 
-#: deprecated/classes/subs-cpt.php:709
+#: deprecated/classes/subs-cpt.php:712
 #: includes/Admin/CPT/DownloadAllSubmissions.php:160
-#: includes/Admin/Menus/Submissions.php:266
+#: includes/Admin/Menus/Submissions.php:270
 msgid "Download All Submissions"
 msgstr "Descargar todos los envíos"
 
-#: deprecated/classes/subs-cpt.php:623
+#: deprecated/classes/subs-cpt.php:626
 msgid "%s submission restored from the Trash."
 msgid_plural "%s submissions restored from the Trash."
 msgstr[0] "%s envío restaurado desde la papelera."
 msgstr[1] "%s envíos restaurados desde la papelera."
 
-#: deprecated/classes/subs-cpt.php:622
+#: deprecated/classes/subs-cpt.php:625
 msgid "%s submission moved to the Trash."
 msgid_plural "%s submissions moved to the Trash."
 msgstr[0] "%s envío enviado a la papelera."
 msgstr[1] "%s envíos enviados a la papelera."
 
-#: deprecated/classes/subs-cpt.php:621
+#: deprecated/classes/subs-cpt.php:624
 msgid "%s submission permanently deleted."
 msgid_plural "%s submissions permanently deleted."
 msgstr[0] "%s envío permanentemente eliminado."
 msgstr[1] "%s envíos permanentemente eliminados."
 
-#: deprecated/classes/subs-cpt.php:620
+#: deprecated/classes/subs-cpt.php:623
 msgid "%s submission not updated, somebody is editing it."
 msgid_plural "%s submissions not updated, somebody is editing them."
 msgstr[0] "%s envío no se ha actualizado, alguien lo está editando."
 msgstr[1] "%s envíos no se han actualizado, alguien los está editando."
 
-#: deprecated/classes/subs-cpt.php:619
+#: deprecated/classes/subs-cpt.php:622
 msgid "%s submission updated."
 msgid_plural "%s submissions updated."
 msgstr[0] "%s envío actualizado."
@@ -6414,7 +6416,7 @@ msgstr "Fecha de inicio"
 msgid "Select a form"
 msgstr "Selecciona un formulario"
 
-#: deprecated/classes/subs-cpt.php:432 deprecated/classes/subs-cpt.php:998
+#: deprecated/classes/subs-cpt.php:432 deprecated/classes/subs-cpt.php:1001
 msgid "Submitted"
 msgstr "Enviado"
 
@@ -6450,10 +6452,10 @@ msgstr "Papelera"
 msgid "Move this item to the Trash"
 msgstr "Mover este artículo a la papelera"
 
-#: deprecated/classes/subs-cpt.php:390 deprecated/classes/subs-cpt.php:691
-#: deprecated/classes/subs-cpt.php:692 includes/Admin/CPT/Submission.php:122
-#: includes/Admin/Menus/Submissions.php:248
-#: includes/Admin/Menus/Submissions.php:249
+#: deprecated/classes/subs-cpt.php:390 deprecated/classes/subs-cpt.php:694
+#: deprecated/classes/subs-cpt.php:695 includes/Admin/CPT/Submission.php:122
+#: includes/Admin/Menus/Submissions.php:252
+#: includes/Admin/Menus/Submissions.php:253
 msgid "Export"
 msgstr "Exportar"
 
@@ -6469,14 +6471,14 @@ msgstr "Editar este artículo"
 #: deprecated/includes/fields/textbox.php:175
 #: includes/Admin/CPT/Submission.php:164
 #: includes/Admin/Menus/Submissions.php:105
-#: includes/Config/FieldSettings.php:214
+#: includes/Config/FieldSettings.php:241
 #: includes/Config/MergeTagsDeprecated.php:183
 #: includes/Config/MergeTagsOther.php:25 includes/Database/MockData.php:620
 #: includes/Fields/Date.php:30
 msgid "Date"
 msgstr "Fecha"
 
-#: deprecated/classes/subs-cpt.php:279 deprecated/classes/subs-cpt.php:993
+#: deprecated/classes/subs-cpt.php:279 deprecated/classes/subs-cpt.php:996
 #: deprecated/classes/subs.php:174 includes/Admin/CPT/Submission.php:140
 #: includes/Admin/Menus/Submissions.php:86
 msgid "#"
@@ -6578,8 +6580,8 @@ msgstr "Nueva acción"
 #: deprecated/includes/admin/admin.php:6
 #: deprecated/includes/admin/admin.php:101
 #: deprecated/includes/fields/list.php:149 includes/Admin/CPT/Submission.php:59
-#: includes/Admin/Menus/AddNew.php:20 includes/Config/FieldSettings.php:153
-#: includes/Config/FieldSettings.php:1012
+#: includes/Admin/Menus/AddNew.php:20 includes/Config/FieldSettings.php:180
+#: includes/Config/FieldSettings.php:1039
 #: includes/Config/FormCalculationSettings.php:12
 #: includes/Templates/admin-menu-dashboard.html.php:167
 msgid "Add New"
@@ -6606,7 +6608,7 @@ msgstr "Fecha de actualización"
 
 #: deprecated/classes/notifications-table.php:176
 #: deprecated/classes/notifications.php:259
-#: includes/Config/FieldSettings.php:807
+#: includes/Config/FieldSettings.php:834
 #: includes/Templates/admin-menu-new-form.html.php:179
 msgid "Type"
 msgstr "Escribir"
@@ -6731,7 +6733,7 @@ msgstr "HTML"
 
 #: deprecated/classes/notification-email.php:130
 #: includes/Config/ActionEmailSettings.php:139
-#: includes/Config/FieldSettings.php:382
+#: includes/Config/FieldSettings.php:409
 msgid "Format"
 msgstr "Formato"
 
